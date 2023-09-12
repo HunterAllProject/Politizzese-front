@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<style>
+    .navbar {
+        background-color: rgb(146, 129, 163);
+        margin-left: 0px;
+    }
+
+    .container {
+        margin-left: 0px;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .nav-link:hover {
+        color: rgb(201, 179, 223);
+        box-shadow: 0px 0px 0px 1px white;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+
+    .collapse {
+        margin: 45px 0px 0px 60px;
+    }
+
+    .img-perfil {
+        margin-right: 10px;
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+    }
+
+    .dropdown-menu {
+        transition: 3s;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container">
+            <a href="" class="navbar-brand">
+                <img src="Logo.png" width="100" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavBar"
+                value="Menu">
+            </button>
+            <div class="collapse navbar-collapse" id="menuNavBar">
+                <div class="navbar-nav">
+                    <a href="" class="nav-link">Novos serviços</a>
+                    <a href="" class="nav-link">Serviços ativos</a>
+                    <a href="" class="nav-link">Serviços concluídos</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="btn-group dropstart">
+                <img src="Eu.jpeg" class="dropdown-toggle img-perfil" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                <ul class="dropdown-menu" style="margin-top: 50px;">
+                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><a class="dropdown-item" href="#">Configuração</a></li>
+                    <li><a class="dropdown-item" href="#">Assinatura</a></li>
+                    <li><a class="dropdown-item" href="#">Extrato</a></li>
+                    <li><a class="dropdown-item" href="#">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

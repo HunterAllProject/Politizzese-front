@@ -1,0 +1,42 @@
+body {
+    padding: 100px 0px 0px 0px;
+}
+
+.card {
+    box-shadow: 3px 6px 8px 3px rgb(146, 129, 163);
+    border-radius: 20px;
+    width: 470px;
+}
+
+.h400 {
+    height: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+h2 {
+
+    color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+col-12 {
+    margin: 10px 0px 0px 0px;
+}
+
+input {
+    color: black;
+}
+
+footer {
+    padding: autoa;
+    height: 200px;
+}
