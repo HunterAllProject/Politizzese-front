@@ -1,9 +1,7 @@
-import React from "react";
-
 export const Navbar = () => {
     return (
-        <>
-            <h1>HEADER</h1>
-        </>
+        <header>
+            <h1>Navbar</h1>
+        </header>
     );
 };
