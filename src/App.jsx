@@ -3,6 +3,8 @@ import { Navbar } from "./components/Navbar/Navbar.jsx";
 import { Home } from "./pages/Home/Home.jsx";
 import { Footer } from "./components/Footer/Footer.jsx";
 import { Login } from "./pages/Login/Login.jsx";
+import { Cadastro } from "./pages/Cadastro/Cadastro.jsx";
+import { RecSenha } from "./pages/RecSenha/RecSenha.jsx";
 
 export const App = () => {
     return (
@@ -11,8 +13,10 @@ export const App = () => {
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/cadastro" element={<Cadastro />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/recsenha" element={<RecSenha />} />
                 </Routes>
-                <Login />
                 <Footer />
             </Router>
         </>
