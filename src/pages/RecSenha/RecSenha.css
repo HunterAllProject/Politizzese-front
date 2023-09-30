@@ -1,11 +1,11 @@
-.sectionLogin {
+.sectionRecSenha {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
-.login {
+.RecSenha {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -17,57 +17,57 @@
     gap: 10px;
 }
 
-.imgFormLogin img {
+.imgFormRecSenha img {
     max-width: 90%;
     min-width: 200px;
 }
 
-.LogoInputLogin {
+.LogoInputRecSenha {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.LogoInputLogin form {
+.LogoInputRecSenha form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.ImgLogoLogin {
+.ImgLogoRecSenha {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.ImgLogoLogin img {
+.ImgLogoRecSenha img {
     max-width: 50%;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
-.formularioLogin {
+.formularioRecSenha {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.inputsLogin {
+.inputsRecSenha {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.inputsLogin,
-.TextFieldLogin {
-    padding: 10px;
+.inputsRecSenha,
+.TextFieldRecSenha {
+    padding: 0px;
     width: 500px;
 }
 
-.LogoInputLogin form button {
-    margin-top: 30px;
+.LogoInputRecSenha form button {
+    margin-top: 20px;
     height: 40px;
     width: 300px;
     border: none;
@@ -81,38 +81,21 @@
     transition: 0.1s;
 }
 
-.LogoInputLogin form button:hover {
+.LogoInputRecSenha form button:hover {
     background-color: #5a2f8b;
 }
 
-.LogoInputLogin p {
-    margin-top: 20px;
+.LogoInputRecSenha p {
+    margin-top: 13px;
     font-size: 15px;
 }
 
-.LogoInputLogin a {
+.LogoInputRecSenha a {
     color: #9850eb;
     font-weight: bold;
     transition: 0.1s;
 }
 
-.LogoInputLogin a:hover {
+.LogoInputRecSenha a:hover {
     color: #5a2f8b;
 }
-
-.LoginRecSenha p{
-    margin-top: -0.5px;
-    margin-left: -230px;
-    
-}
-
-.LoginRecSenha a{
-    color: black;
-    transition: 0.1s;
-    font-weight:normal;
-}
-
-.LoginRecSenha a:hover{
-    color: #5a2f8b;
-}
-

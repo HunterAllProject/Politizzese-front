@@ -1,11 +1,11 @@
-.sectionLogin {
+.sectionCadastro {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
-.login {
+.Cadastro {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -17,56 +17,56 @@
     gap: 10px;
 }
 
-.imgFormLogin img {
+.imgFormCadastro img {
     max-width: 90%;
     min-width: 200px;
 }
 
-.LogoInputLogin {
+.LogoInputCadastro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.LogoInputLogin form {
+.LogoInputCadastro form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.ImgLogoLogin {
+.ImgLogoCadastro {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.ImgLogoLogin img {
+.ImgLogoCadastro img {
     max-width: 50%;
     margin-bottom: 50px;
 }
 
-.formularioLogin {
+.formularioCadastro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.inputsLogin {
+.inputsCadastro {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.inputsLogin,
-.TextFieldLogin {
+.inputsCadastro,
+.TextFieldCadastro {
     padding: 10px;
     width: 500px;
 }
 
-.LogoInputLogin form button {
+.LogoInputCadastro form button {
     margin-top: 30px;
     height: 40px;
     width: 300px;
@@ -81,38 +81,20 @@
     transition: 0.1s;
 }
 
-.LogoInputLogin form button:hover {
+.LogoInputCadastro form button:hover {
     background-color: #5a2f8b;
 }
 
-.LogoInputLogin p {
+.LogoInputCadastro p {
     margin-top: 20px;
     font-size: 15px;
 }
 
-.LogoInputLogin a {
+.LogoInputCadastro a {
     color: #9850eb;
     font-weight: bold;
-    transition: 0.1s;
 }
 
-.LogoInputLogin a:hover {
+.LogoInputCadastro a:hover {
     color: #5a2f8b;
 }
-
-.LoginRecSenha p{
-    margin-top: -0.5px;
-    margin-left: -230px;
-    
-}
-
-.LoginRecSenha a{
-    color: black;
-    transition: 0.1s;
-    font-weight:normal;
-}
-
-.LoginRecSenha a:hover{
-    color: #5a2f8b;
-}
-
