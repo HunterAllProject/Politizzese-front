@@ -1,0 +1,100 @@
+.sectionCadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.Cadastro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    /* background-color:#0098B2;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(146, 137, 137); */
+    gap: 10px;
+}
+
+.imgFormCadastro img {
+    max-width: 90%;
+    min-width: 200px;
+}
+
+.LogoInputCadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogoInputCadastro form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImgLogoCadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImgLogoCadastro img {
+    max-width: 50%;
+    margin-bottom: 50px;
+}
+
+.formularioCadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputsCadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputsCadastro,
+.TextFieldCadastro {
+    padding: 10px;
+    width: 500px;
+}
+
+.LogoInputCadastro form button {
+    margin-top: 30px;
+    height: 40px;
+    width: 300px;
+    border: none;
+    cursor: pointer;
+    background-color: #9850eb;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 1px 1px 2px rgb(146, 137, 137);
+    transition: 0.1s;
+}
+
+.LogoInputCadastro form button:hover {
+    background-color: #5a2f8b;
+}
+
+.LogoInputCadastro p {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.LogoInputCadastro a {
+    color: #9850eb;
+    font-weight: bold;
+}
+
+.LogoInputCadastro a:hover {
+    color: #5a2f8b;
+}
