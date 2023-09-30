@@ -1,27 +1,27 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    max-width: 100%;
-    background-color: #5A2F8B ;
+
+    background-color: #5a2f8b;
     box-shadow: 1px 1px 10px rgb(146, 137, 137);
     padding: 20px;
 }
 
-.imgLogoHeader{
+.imgLogoHeader {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 50px;
 }
 
-.imgLogoHeader img{
-    max-width:200px;
+.imgLogoHeader img {
+    max-width: 200px;
     cursor: pointer;
 }
 
-.imgLogoHeader ul{
+.imgLogoHeader ul {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -29,7 +29,7 @@
     margin-top: 10px;
 }
 
-.imgLogoHeader a{
+.imgLogoHeader a {
     color: #fff;
     font-size: 15px;
     font-weight: bold;
@@ -39,21 +39,21 @@
     border-radius: 5px;
 }
 
-.imgLogoHeader a:hover{
+.imgLogoHeader a:hover {
     background-color: rgb(0, 0, 0, 0.1);
 }
 
-.imgPerfilHeader img{
+.imgPerfilHeader img {
     max-width: 45px;
     cursor: pointer;
 }
 
-@media(max-width: 700px){
-    .header{
+@media (max-width: 700px) {
+    .header {
         padding: 15px;
     }
 
-    .imgLogoHeader{
+    .imgLogoHeader {
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -61,32 +61,31 @@
         gap: 20px;
     }
 
-    .imgLogoHeader img{
-        max-width: 180px;    
+    .imgLogoHeader img {
+        max-width: 180px;
     }
 
-    .imgLogoHeader ul{
+    .imgLogoHeader ul {
         gap: 25px;
         margin-top: 0px;
     }
 
-    .imgLogoHeader a{
+    .imgLogoHeader a {
         font-size: 14px;
         padding: 10px;
     }
 
-    .imgPerfilHeader img{
+    .imgPerfilHeader img {
         max-width: 40px;
     }
 }
 
-
-@media(max-width: 400px){
-    .header{
+@media (max-width: 400px) {
+    .header {
         padding: 15px;
     }
 
-    .imgLogoHeader{
+    .imgLogoHeader {
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -94,22 +93,21 @@
         gap: 20px;
     }
 
-    .imgLogoHeader img{
-        max-width: 150px;    
+    .imgLogoHeader img {
+        max-width: 150px;
     }
 
-    .imgLogoHeader ul{
+    .imgLogoHeader ul {
         gap: 10px;
         margin-top: 0px;
     }
 
-    .imgLogoHeader a{
+    .imgLogoHeader a {
         font-size: 10px;
         padding: 10px;
     }
 
-    .imgPerfilHeader img{
+    .imgPerfilHeader img {
         max-width: 30px;
     }
 }
-

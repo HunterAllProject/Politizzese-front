@@ -14,12 +14,6 @@
     /* background-color:#0098B2;
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgb(146, 137, 137); */
-    gap: 10px;
-}
-
-.imgFormLogin img {
-    max-width: 90%;
-    min-width: 200px;
 }
 
 .LogoInputLogin {
@@ -100,19 +94,88 @@
     color: #5a2f8b;
 }
 
-.LoginRecSenha p{
+.LoginRecSenha p {
     margin-top: -0.5px;
     margin-left: -230px;
-    
 }
 
-.LoginRecSenha a{
+.LoginRecSenha a {
     color: black;
     transition: 0.1s;
-    font-weight:normal;
+    font-weight: normal;
 }
 
-.LoginRecSenha a:hover{
+.LoginRecSenha a:hover {
     color: #5a2f8b;
 }
 
+@media (max-width: 550px) {
+    .login {
+        height: 350px;
+    }
+
+    .ImgLogoLogin img {
+        max-width: 40%;
+        margin-bottom: 35px;
+    }
+
+    .inputsLogin,
+    .TextFieldLogin {
+        padding: 6px;
+        width: 280px;
+    }
+
+    .TextFieldLogin input{
+        height: 15px;
+    }
+
+    .LogoInputLogin form button {
+        margin-top: 25px;
+        height: 35px;
+        width: 200px;   
+        font-size: 15px;
+    }
+
+    .LogoInputLogin p {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    .LoginRecSenha p {
+        margin-top: 1px;
+        margin-left: -130px;
+    }
+}
+
+@media (max-width: 300px) {
+    .login {
+        height: 300px;
+    }
+
+    .inputsLogin,
+    .TextFieldLogin {
+        padding: 6px;
+        width: 260px;
+    }
+
+    .TextFieldLogin input{
+        height: 15px;
+    }
+
+    .LogoInputLogin form button {
+        margin-top: 25px;
+        height: 30px;
+        width: 191px;   
+        font-size: 15px;
+    }
+
+    .LogoInputLogin p {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    .LoginRecSenha p {
+        margin-top: 1px;
+        margin-left: -120px;
+    }
+}

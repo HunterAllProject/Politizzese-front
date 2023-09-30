@@ -11,15 +11,6 @@
     justify-content: center;
     align-items: center;
     height: 500px;
-    /* background-color:#0098B2;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px rgb(146, 137, 137); */
-    gap: 10px;
-}
-
-.imgFormRecSenha img {
-    max-width: 90%;
-    min-width: 200px;
 }
 
 .LogoInputRecSenha {
@@ -44,7 +35,7 @@
 
 .ImgLogoRecSenha img {
     max-width: 50%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .formularioRecSenha {
@@ -62,7 +53,7 @@
 
 .inputsRecSenha,
 .TextFieldRecSenha {
-    padding: 0px;
+    padding: 1px;
     width: 500px;
 }
 
@@ -98,4 +89,76 @@
 
 .LogoInputRecSenha a:hover {
     color: #5a2f8b;
+}
+
+@media (max-width: 550px) {
+    .RecSenha {
+        height: 350px;
+    }
+
+    .ImgLogoRecSenha img {
+        max-width: 40%;
+        margin-bottom: 35px;
+    }
+
+    .inputsRecSenha,
+    .TextFieldRecSenha {
+        padding: 6px;
+        width: 280px;
+    }
+
+    .TextFieldRecSenha input{
+        height: 15px;
+    }
+
+    .LogoInputRecSenha form button {
+        margin-top: 25px;
+        height: 35px;
+        width: 200px;   
+        font-size: 15px;
+    }
+
+    .LogoInputRecSenha p {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    .RecSenhaRecSenha p {
+        margin-top: 1px;
+        margin-left: -130px;
+    }
+}
+
+@media (max-width: 300px) {
+    .ImgLogoRecSenha img {
+        max-width: 50%;
+        margin-bottom: 35px;
+    }
+
+    .RecSenha {
+        height: 280px;
+    }
+
+    .inputsRecSenha,
+    .TextFieldRecSenha {
+        padding: 6px;
+        width: 260px;
+    }
+
+    .TextFieldRecSenha input{
+        height: 10px;
+    }
+
+    .LogoInputRecSenha form button {
+        margin-top: 20px;
+        height: 30px;
+        width: 191px;   
+        font-size: 15px;
+    }
+
+    .LogoInputRecSenha p {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
 }

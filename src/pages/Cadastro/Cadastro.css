@@ -98,3 +98,75 @@
 .LogoInputCadastro a:hover {
     color: #5a2f8b;
 }
+
+@media (max-width: 550px) {
+    .Cadastro {
+        height: 350px;
+    }
+
+    .ImgLogoCadastro img {
+        max-width: 40%;
+        margin-bottom: 35px;
+    }
+
+    .inputsCadastro,
+    .TextFieldCadastro {
+        padding: 6px;
+        width: 280px;
+    }
+
+    .TextFieldCadastro input{
+        height: 15px;
+    }
+
+    .LogoInputCadastro form button {
+        margin-top: 25px;
+        height: 35px;
+        width: 200px;   
+        font-size: 15px;
+    }
+
+    .LogoInputCadastro p {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    .CadastroRecSenha p {
+        margin-top: 1px;
+        margin-left: -130px;
+    }
+}
+
+@media (max-width: 300px) {
+    .ImgLogoCadastro img {
+        max-width: 40%;
+        margin-bottom: 35px;
+    }
+
+    .Cadastro {
+        height: 350px;
+    }
+
+    .inputsCadastro,
+    .TextFieldCadastro {
+        padding: 6px;
+        width: 260px;
+    }
+
+    .TextFieldCadastro input{
+        height: 12px;
+    }
+
+    .LogoInputCadastro form button {
+        margin-top: 25px;
+        height: 30px;
+        width: 191px;   
+        font-size: 15px;
+    }
+
+    .LogoInputCadastro p {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+}
