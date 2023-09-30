@@ -1,0 +1,100 @@
+.sectionLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    /* background-color:#0098B2;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(146, 137, 137); */
+    gap: 10px;
+}
+
+/* .imgFormLogin img {
+    max-width: 90%;
+    min-width: 200px;
+} */
+
+.LogoInputLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogoInputLogin form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImgLogoLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImgLogoLogin img {
+    max-width: 50%;
+    margin-bottom: 50px;
+}
+
+.formularioLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputsLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputsLogin,
+.TextFieldLogin {
+    padding: 10px;
+    width: 500px;
+}
+
+.LogoInputLogin form button {
+    margin-top: 30px;
+    height: 40px;
+    width: 300px;
+    border: none;
+    cursor: pointer;
+    background-color: #9850eb;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 1px 1px 2px rgb(146, 137, 137);
+    transition: 0.1s;
+}
+
+.LogoInputLogin form button:hover {
+    background-color: #5a2f8b;
+}
+
+.LogoInputLogin p {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.LogoInputLogin a {
+    color: #9850eb;
+    font-weight: bold;
+}
+
+.LogoInputLogin a:hover {
+    color: #5a2f8b;
+}
