@@ -6,7 +6,7 @@ import logoIMGLogin from "../../assets/politizzeseLogo.svg";
 import ImgDesignLogin from "../../assets/cameraDesign.svg";
 
 export const Login = () => {
-    const [nome, setNome] = useState("");
+    const [senha, setSenha] = useState("");
     const [email, setEmail] = useState("");
 
     return (
@@ -24,24 +24,32 @@ export const Login = () => {
                         <div className="formularioLogin">
                             <div className="inputsLogin">
                                 <TextField
+                                    required
+                                    type="email"
                                     className="TextFieldLogin"
                                     id="filled-basic"
-                                    label="Seu Name"
+                                    label="Seu E-mail"
                                     variant="filled"
-                                    value={nome}
-                                    onChange={(e) => setNome(e.target.value)}
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
                                 />
                             </div>
 
                             <div className="inputsLogin">
                                 <TextField
+                                    required
+                                    type="password"
                                     className="TextFieldLogin"
                                     id="filled-basic"
-                                    label="Seu Email"
+                                    label="Sua Senha"
                                     variant="filled"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
+                                    value={senha}
+                                    onChange={(e) => setSenha(e.target.value)}
                                 />
+                            </div>
+
+                            <div className="LoginRecSenha">
+                                <Link to="/recsenha"><p>Esqueceu a sua senha?</p></Link>
                             </div>
                         </div>
 

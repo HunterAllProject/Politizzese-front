@@ -17,10 +17,10 @@
     gap: 10px;
 }
 
-/* .imgFormLogin img {
+.imgFormLogin img {
     max-width: 90%;
     min-width: 200px;
-} */
+}
 
 .LogoInputLogin {
     display: flex;
@@ -93,8 +93,26 @@
 .LogoInputLogin a {
     color: #9850eb;
     font-weight: bold;
+    transition: 0.1s;
 }
 
 .LogoInputLogin a:hover {
     color: #5a2f8b;
 }
+
+.LoginRecSenha p{
+    margin-top: -0.5px;
+    margin-left: -230px;
+    
+}
+
+.LoginRecSenha a{
+    color: black;
+    transition: 0.1s;
+    font-weight:normal;
+}
+
+.LoginRecSenha a:hover{
+    color: #5a2f8b;
+}
+
