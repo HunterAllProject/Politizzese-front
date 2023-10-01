@@ -24,7 +24,6 @@
     margin-top: 30px;
     padding: 35px;
     font-size: 20px;
-
 }
 
 .cardNovosServicos {
@@ -95,4 +94,85 @@
     background-color: #9850EB;
     width: 190px;
     box-shadow: 1px 1px 1px px rgb(146, 137, 137);
+}
+
+@media(max-width: 1500px){
+    .textoNovosServicos p {
+        margin-top: 20px;
+        padding: 35px;
+        font-size: 20px;
+    }
+
+    .cardNovosServicos {
+        display: flex;
+        justify-content: space-around;
+        gap: 5%;
+        height: 250px;
+    }
+
+    .card {
+        height: 150px;
+        width: 350px;
+        gap: 30px;
+    }
+
+    .cardImg img {
+        max-width: 130px;
+        min-width: 0px;
+    }
+    
+    .cardDescricao h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .cardCreditos {
+        padding: 0px;
+        max-width: 90px;
+        margin-bottom: 10px;
+    }
+
+    .cardCreditos p {
+        font-size: 13px;
+    }
+    
+    .cardEdicao p {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .cardSolicitar p {
+        font-size: 12px;
+    }
+    
+    .cardSolicitar {
+        padding: 1px;
+        width: 140px;
+    }
+    
+}
+
+@media(max-width: 1100px){
+    .cardNovosServicos  {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    .cardCreditos {
+        padding: 0px;
+        max-width: 85px;
+        margin-bottom: 10px;
+    }
+
+    .cardCreditos p {
+        font-size: 12px;
+    }
+    
+    .cardEdicao p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
 }
