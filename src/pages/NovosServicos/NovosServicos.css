@@ -1,0 +1,98 @@
+.tituloNovosServicos h1 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #000000b1;
+    padding: 10px;
+}
+
+.barraNovosServicos {
+    background-color: #000000b1;
+    height: 2px;
+    max-width: 99%;
+    margin-left: 9px;
+}
+
+.textoCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000b1;
+}
+
+.textoNovosServicos p {
+    margin-top: 30px;
+    padding: 35px;
+    font-size: 20px;
+
+}
+
+.cardNovosServicos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    height: 300px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 400px;
+    gap: 40px;
+    background-color: #0098B2;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px rgb(146, 137, 137);
+}
+
+.cardImg img {
+    max-width: 200px;
+    min-width: 70px;
+}
+
+.cardDescricao h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cardCreditos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #9850EB;
+    padding: 1px;
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.cardCreditos p {
+    font-size: 15px;
+    color: #fff;
+}
+
+.cardEdicao p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.cardSolicitar p {
+    font-size: 15px;
+    color: #fff;
+}
+
+.cardSolicitar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 1px;
+    background-color: #9850EB;
+    width: 190px;
+    box-shadow: 1px 1px 1px px rgb(146, 137, 137);
+}
