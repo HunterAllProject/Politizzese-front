@@ -6,9 +6,36 @@ import logoIMGCadastro from "../../assets/politizzeseLogo.svg";
 import ImgDesignCadastro from "../../assets/cameraDesign.svg";
 
 export const Cadastro = () => {
-    const [nome, setNome] = useState("");
-    const [email, setEmail] = useState("");
-    const [senha, setSenha] = useState("");
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        senha: '',
+    });
+
+    const handleFormCadastro = (event, name) => {
+        setFormData({
+            ...formData,
+        [name]: event.target.value
+        })
+    }
+
+    const handleForm =  async (event) => {
+        try {
+            event.preventDefault()
+            // Caminho da api
+            const response = await fetch(`/Usuario`, {
+                method: 'POST',
+                body: JSON.stringify(formData)
+            })
+
+            const json = await response.json()
+            console.log(response.status)
+            console.Console(json)
+
+        } catch (error) {
+            console.log(error)
+        }
+    }
 
     return (
         <div className="sectionCadastro">
@@ -21,7 +48,7 @@ export const Cadastro = () => {
                         <img src={logoIMGCadastro} alt="logo do site" />
                     </div>
 
-                    <form>
+                    <form onSubmit={handleForm}>  
                         <div className="formularioCadastro">
                             <div className="inputsCadastro">
                                 <TextField
@@ -31,8 +58,8 @@ export const Cadastro = () => {
                                     id="filled-basic"
                                     label="Seu Name"
                                     variant="filled"
-                                    value={nome}
-                                    onChange={(e) => setNome(e.target.value)}
+                                    value={formData.nome}
+                                    onChange={(e) => {handleFormCadastro(e, 'name')}}
                                 />
                             </div>
 
@@ -44,8 +71,8 @@ export const Cadastro = () => {
                                     id="filled-basic"
                                     label="Seu Email"
                                     variant="filled"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
+                                    value={formData.email}
+                                    onChange={(e) => {handleFormCadastro(e, 'email')}}
                                 />
                             </div>
 
@@ -57,8 +84,8 @@ export const Cadastro = () => {
                                     id="filled-basic"
                                     label="Uma Senha"
                                     variant="filled"
-                                    value={senha}
-                                    onChange={(e) => setSenha(e.target.value)}
+                                    value={formData.senha}
+                                    onChange={(e) => {handleFormCadastro(e, 'senha')}}
                                 />
                             </div>
                         </div>
