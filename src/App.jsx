@@ -5,6 +5,7 @@ import { Footer } from "./components/Footer/Footer.jsx";
 import { Login } from "./pages/Login/Login.jsx";
 import { Cadastro } from "./pages/Cadastro/Cadastro.jsx";
 import { RecSenha } from "./pages/RecSenha/RecSenha.jsx";
+import { AddCartao } from "./pages/AddCartao/AddCartao.jsx";
 
 export const App = () => {
     return (
@@ -17,6 +18,7 @@ export const App = () => {
                     <Route path="/login" element={<Login />} />
                     <Route path="/recsenha" element={<RecSenha />} />
                 </Routes>
+                <AddCartao />
                 <Footer />
             </Router>
         </>
