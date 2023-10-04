@@ -23,7 +23,6 @@ export const App = () => {
                     <Route path="/assinaturas" element={<Assinaturas />} />
                 </Routes>
             </Router>
-            <Footer />
         </>
     );
 };
