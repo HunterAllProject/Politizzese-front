@@ -10,7 +10,7 @@ export const Navbar = () => {
             <div className="imgLogoHeader">
                 <img src={logoIMG} alt="Imagem da logo" />
 
-                {/* <ul>
+                 <ul>
                     <li>
                         <Link to="/servicos">Serviços</Link>
                     </li>
@@ -24,7 +24,7 @@ export const Navbar = () => {
             </div>
 
             <div className="imgPerfilHeader">
-                <img src={perfilIMG} alt="Imagem do perfil" /> */}
+                <img src={perfilIMG} alt="Imagem do perfil" /> 
             </div>
         </header>
     );
