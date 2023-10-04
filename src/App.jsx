@@ -6,6 +6,8 @@ import { Login } from "./pages/Login/Login.jsx";
 import { Cadastro } from "./pages/Cadastro/Cadastro.jsx";
 import { RecSenha } from "./pages/RecSenha/RecSenha.jsx";
 import { AddCartao } from "./pages/AddCartao/AddCartao.jsx";
+import {NovosServicos} from './pages/NovosServicos/NovosServicos.jsx';
+import {Assinaturas} from './pages/Assinaturas/Assinaturas.jsx';
 
 export const App = () => {
     return (
@@ -17,8 +19,11 @@ export const App = () => {
                     <Route path="/cadastro" element={<Cadastro />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/recsenha" element={<RecSenha />} />
+                    <Route path="/addcartao" element={<AddCartao />} />
+                    <Route path="/novoserv" element={<NovosServicos />} />
+                    <Route path="/assinaturas" element={<Assinaturas />} />
                 </Routes>
-                <AddCartao />
+                
                 <Footer />
             </Router>
         </>
