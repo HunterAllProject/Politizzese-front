@@ -1,0 +1,438 @@
+.tituloAssinaturas h1 {
+ margin-top: 30px;
+ font-size: 20px;
+ color: #000000b1;
+ padding: 10px;
+}
+
+
+.barraAssinaturas {
+ background-color: #000000b1;
+ height: 2px;
+ max-width: 99%;
+ margin-left: 9px;
+ margin-bottom: 40px;
+}
+
+.assinaturasContainer {
+ display: flex;
+ flex-direction: column;
+}
+
+.container_ass {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin-top: 80px;
+
+}
+
+.container_ass .container_titulo_ass h1 {
+ display: flex;
+ background-color: #5A2F8B;
+ border-radius: 10px 10px 0px 0px;
+ width: 904px;
+ justify-content: center;
+ text-transform: uppercase;
+ color: #FFF;
+ text-align: center;
+ font-family: Nunito;
+ font-size: 20px;
+ padding: 10px;
+}
+
+
+.container_conteudo_ass1 {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ background-color: #0098B2;
+ width: 904px;
+ height: auto;
+
+}
+
+.container_conteudo_ass1 h3 {
+ color: #1E1E1E;
+ text-align: center;
+ font-family: Nunito;
+ font-size: 15px;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ text-transform: uppercase;
+ font-weight: 700;
+}
+
+
+.container_conteudo_ass1 .sessoes_ass1 {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ margin-bottom: 30px;
+}
+
+.container_conteudo_ass1 .sessoes_ass1 .section1 {
+ display: flex;
+ flex-direction: column;
+ margin-right: 60px;
+}
+
+.container_conteudo_ass1 .sessoes_ass1 .section1 h4,
+.container_conteudo_ass1 .sessoes_ass1 .section3 h4 {
+ align-items: left;
+ text-transform: uppercase;
+ color: #1E1E1E;
+ font-family: Nunito;
+ font-size: 13px;
+ padding: 10px;
+}
+
+.container_conteudo_ass1 .sessoes_ass1 .section1 p {
+ align-items: left;
+ text-transform: uppercase;
+ color: #000000;
+ font-family: Nunito;
+ font-size: 13px;
+ padding-left: 10px;
+ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ font-weight: 800;
+
+}
+
+.container_conteudo_ass1 .sessoes_ass1 .section1 h1 {
+ align-items: left;
+ text-transform: uppercase;
+ color: #000000;
+ font-family: Nunito;
+ font-size: 30px;
+ padding-left: 25px;
+ font-weight: bold;
+ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container_conteudo_ass1 .sessoes_ass1 .section1 h5 {
+ align-items: right;
+ text-align: right;
+ text-transform: uppercase;
+ color: #1E1E1E;
+ font-family: Nunito;
+ font-size: 13px;
+}
+
+.container_conteudo_ass1 .sessoes_ass1 .section2 {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.container_conteudo_ass1 .sessoes_ass1 .section2 h1 {
+ color: #5A2F8B;
+ font-family: Nunito;
+ font-size: 40px;
+ text-align: center;
+ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.container_conteudo_ass1 .sessoes_ass1 .section3 {
+ display: flex;
+ flex-direction: column;
+ margin-left: 60px;
+}
+
+.container_conteudo_ass1 .sessoes_ass1 .section3 h1 {
+ align-items: left;
+ text-transform: uppercase;
+ color: #000000;
+ font-family: Nunito;
+ font-size: 30px;
+ padding-left: 10px;
+ font-weight: bold;
+ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container_conteudo_ass1 .sessoes_ass1 .section3 .p_estilizado {
+ text-align: center;
+ border-radius: 5px;
+ background-color: #5A2F8B;
+ padding: 5px;
+ max-width: 100px;
+ margin-bottom: 10px;
+ font-size: 13px;
+ color: #fff;
+ margin-left: 60px;
+ margin-top: -20px;
+}
+
+.sessoes_ass2 {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ background-color: #0098B2;
+ width: 904px;
+ height: auto;
+ padding-bottom: 80px;
+ border-radius: 0px 0px 10px 10px;
+}
+
+.sessoes_ass2 .section1_descricao {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.sessoes_ass2 .section1_descricao h3 {
+ color: #1E1E1E;
+ font-family: Nunito;
+ font-size: 17px;
+ text-align: left;
+ margin-bottom: 10px;
+}
+
+
+.sessoes_ass2 .section1_descricao p {
+ color: #000000;
+ font-family: Nunito;
+ font-size: 15px;
+ text-align: left;
+
+}
+
+.sessoes_ass2 .section2_descricao {
+ width: 3px;
+ height: 100px;
+ background: #9675A6;
+ margin-left: 80px;
+ margin-right: 30px;
+
+}
+
+.sessoes_ass2 .section3_descricao {
+ display: flex;
+ flex-direction: column;
+ align-items: start;
+}
+
+.sessoes_ass2 .section3_descricao .linha1_ass,
+.sessoes_ass2 .section3_descricao .linha2_ass,
+.sessoes_ass2 .section3_descricao .linha3_ass {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ gap: 20px;
+ margin-bottom: 10px;
+
+}
+
+.sessoes_ass2 .section3_descricao .linha1_ass p,
+.sessoes_ass2 .section3_descricao .linha2_ass p,
+.sessoes_ass2 .section3_descricao .linha3_ass p {
+ align-items: left;
+ color: #000000;
+ font-family: Nunito;
+ font-size: 15px;
+ padding-left: 10px;
+ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ font-weight: 800;
+}
+
+.sessoes_ass2 .section3_descricao .linha1_ass h5,
+.sessoes_ass2 .section3_descricao .linha2_ass h5,
+.sessoes_ass2 .section3_descricao .linha3_ass h5 {
+ color: #FFF;
+ text-align: center;
+ font-family: Nunito;
+ font-size: 12px;
+ text-transform: uppercase;
+ border-radius: 5px;
+ background: #9850EB;
+ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+ padding: 3px 5px 3px 5px;
+}
+
+
+.botao_assinaturas {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+ margin-top: 80px;
+ margin-bottom: 80px;
+}
+
+
+.botao_assinaturas button {
+ margin-top: 30px;
+ height: 40px;
+ width: 300px;
+ border: none;
+ cursor: pointer;
+ background-color: #9850eb;
+ border-radius: 5px;
+ font-size: 15px;
+ font-weight: bold;
+ box-shadow: 1px 1px 2px rgb(146, 137, 137);
+ transition: 0.1s;
+}
+
+.botao_assinaturas a {
+ color: #fff;
+}
+
+.botao_assinaturas button:hover {
+ background-color: #5a2f8b;
+}
+
+
+@media (max-width:768px) {
+
+ .tituloAssinaturas h1 {
+  margin-top: 20px;
+  font-size: 15px;
+ }
+
+ .barraAssinaturas {
+  max-width: 98%;
+  margin-left: 9px;
+ }
+
+ .container_ass {
+  margin-top: 30px;
+ }
+
+ .container_ass .container_titulo_ass h1 {
+  width: 404px;
+  font-size: 15px;
+ }
+
+ .container_conteudo_ass1 {
+  width: 404px;
+ }
+
+ .container_conteudo_ass1 h3 {
+  font-size: 12px;
+ }
+
+ .container_conteudo_ass1 .sessoes_ass1 .section1 h4,
+ .container_conteudo_ass1 .sessoes_ass1 .section3 h4 {
+  font-size: 10px;
+ }
+
+ .container_conteudo_ass1 .sessoes_ass1 .section1 p {
+  font-size: 10px;
+ }
+
+ .container_conteudo_ass1 .sessoes_ass1 .section1 h1 {
+  font-size: 25px;
+ }
+
+ .container_conteudo_ass1 .sessoes_ass1 .section1 h5 {
+  font-size: 10px;
+ }
+
+ .container_conteudo_ass1 .sessoes_ass1 .section2 h1 {
+  font-size: 25px;
+ }
+
+ .container_conteudo_ass1 .sessoes_ass1 .section3 h1 {
+  font-size: 25px;
+ }
+
+ .container_conteudo_ass1 .sessoes_ass1 .section3 .p_estilizado {
+  font-size: 10px;
+ }
+
+
+ .sessoes_ass2 {
+  display: flex;
+  flex-direction: column;
+  width: 404px;
+  padding-bottom: 30px;
+ }
+
+ .sessoes_ass2 .section1_descricao h3 {
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+ }
+
+ .sessoes_ass2 .section1_descricao p {
+  font-size: 12px;
+  text-align: center;
+
+ }
+
+ .sessoes_ass2 .section2_descricao {
+  display: none;
+ }
+
+ .sessoes_ass2 .section3_descricao {
+  margin-top: 30px;
+ }
+
+ .sessoes_ass2 .section3_descricao .linha1_ass,
+ .sessoes_ass2 .section3_descricao .linha2_ass,
+ .sessoes_ass2 .section3_descricao .linha3_ass {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+
+ }
+
+ .sessoes_ass2 .section3_descricao .linha1_ass p,
+ .sessoes_ass2 .section3_descricao .linha2_ass p,
+ .sessoes_ass2 .section3_descricao .linha3_ass p {
+  align-items: center;
+  font-size: 12px;
+  padding-left: 0px;
+ }
+
+ .sessoes_ass2 .section3_descricao .linha1_ass h5,
+ .sessoes_ass2 .section3_descricao .linha2_ass h5,
+ .sessoes_ass2 .section3_descricao .linha3_ass h5 {
+  font-size: 10px;
+  text-transform: uppercase;
+ }
+
+ .botao_assinaturas {
+  margin-top: 40px;
+  margin-bottom: 50px;
+ }
+
+
+ .botao_assinaturas button {
+  margin-top: 20px;
+  height: 35px;
+  width: 280px;
+  font-size: 12px;
+ }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+ .barraAssinaturas {
+  margin-bottom: 0px;
+ }
+
+
+ .container_ass .container_titulo_ass h1 {
+  width: 704px;
+ }
+
+ .container_conteudo_ass1 {
+  width: 704px;
+ }
+
+ .sessoes_ass2 {
+  width: 704px;
+ }
+
+}

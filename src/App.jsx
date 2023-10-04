@@ -6,6 +6,7 @@ import { RecSenha } from "./pages/RecSenha/RecSenha.jsx";
 import { AddCartao } from "./pages/AddCartao/AddCartao.jsx";
 import { ListarCartao } from "./pages/ListarCartao/ListarCartao.jsx";
 import { NovosServicos } from "./pages/NovosServicos/NovosServicos.jsx";
+import {Assinaturas} from './pages/Assinaturas/Assinaturas.jsx';
 
 export const App = () => {
     return (
@@ -19,8 +20,10 @@ export const App = () => {
                     <Route path="/addcartao" element={<AddCartao />} />
                     <Route path="/listarcartao" element={<ListarCartao />} />
                     <Route path="/novosservicos" element={<NovosServicos />} />
+                    <Route path="/assinaturas" element={<Assinaturas />} />
                 </Routes>
             </Router>
+            <Footer />
         </>
     );
 };

@@ -15,6 +15,7 @@
  flex-direction: column;
  justify-content: center;
  align-items: left;
+ margin-right: 5px;
 }
 
 .footer-left h3,
@@ -76,4 +77,29 @@
  flex-direction: row;
  align-items: center;
  gap: 10px;
+}
+
+@media (max-width: 600px) {
+ .footer {
+  flex-direction: column;
+ }
+
+ .footer-left h3,
+.footer-meio h3 {
+ font-size: 12px;
+}
+
+.footer-left ul li {
+ font-size: 13px;
+ }
+
+ .footer-right .logo-media img {
+ display: none;
+ }
+
+ .footer-right p {
+  margin-top: 20px;
+  font-size: 12px;
+ }
+
 }
