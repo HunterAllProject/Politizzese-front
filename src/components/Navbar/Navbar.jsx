@@ -8,8 +8,9 @@ export const Navbar = () => {
     return (
         <header className="header" id="header">
             <div className="imgLogoHeader">
+            <Link to="/">
                 <img src={logoIMG} alt="Imagem da logo" />
-
+            </Link>
                  <ul>
                     <li>
                         <Link to="/servicos">Serviços</Link>
@@ -18,7 +19,7 @@ export const Navbar = () => {
                         <Link to="/pedidos">pedidos</Link>
                     </li>
                     <li>
-                        <Link to="/assinatiras">Assinaturas</Link>
+                        <Link to="/assinaturas">Assinaturas</Link>
                     </li>
                 </ul>
             </div>
