@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Link from "@mui/material/Link";
@@ -14,6 +15,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 const defaultTheme = createTheme();
 
 export const AddCartao = () => {
+    const navigate = useNavigate();
     const [state, setState] = useState({
         number: "",
         expiry: "",
@@ -24,6 +26,14 @@ export const AddCartao = () => {
 
     const handleSubimit = (event) => {
         event.preventDefault();
+
+        const storedCartao =
+            JSON.parse(localStorage.getItem("cartoes")) || [];
+        storedCartao.push(state);
+        localStorage.setItem("cartoes", JSON.stringify(storedCartao));
+
+        console.log("Cartão adicionado com sucesso", state);
+        navigate("/listarcartao");
     };
 
     const handleInputChange = (evt) => {
@@ -119,7 +129,7 @@ export const AddCartao = () => {
                         </Grid>
 
                         <div className="butaoAddCartao">
-                            <Link to="/editcartao">
+                            <Link to="/listarcartao">
                                 <p>Cancelar</p>
                             </Link>
 
