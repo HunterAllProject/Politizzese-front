@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import deleteIMG from "../../assets/delete.svg";
 import editarIMG from "../../assets/editar.svg";
+import cartaoIMG from "../../assets/cartao.svg";
 import { Link } from "react-router-dom";
 import { Navbar } from "../../components/Navbar/Navbar.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
@@ -33,33 +34,44 @@ export const ListarCartao = ({}) => {
                     <ul className="listarCartaoUl">
                         {cartoes.map((cartao, index) => (
                             <li key={index} className="listarCartaoLi">
-                                <div className="descricaoListarCartao">
-                                    <div className="listar-number">
-                                        {cartao.number}
-                                    </div>
-                                    <div className="listar-expiry">
-                                        {cartao.expiry}
-                                    </div>
+                                <div  className="containerDescListarCartao1">
+                                    <img src={cartaoIMG} alt="" />
                                 </div>
 
-                                <div className="cartaoEditarExcluir">
-                                    <div className="cartaoEditarListar">
-                                        <Link to={`/edit/${index}`}>
-                                            <img
-                                                src={editarIMG}
-                                                alt="Imagem da ferramenta de editar"
-                                            />
-                                        </Link>
+                                <div className="containerDescListarCartao">
+                                    <div className="descListarCartao">
+                                        <div className="titulo-cartão">
+                                            <h1>Cartão cadastrado</h1>
+                                        </div>
+
+                                        <div className="listar-number">
+                                            <p>{cartao.number}</p>
+                                        </div>
+
+                                        <div className="listar-expiry">
+                                            <p>Validade: {cartao.expiry}</p>
+                                        </div>
                                     </div>
 
-                                    <div className="cartaoExcluirListar">
-                                        <img
-                                            src={deleteIMG}
-                                            alt="Imagem da lixeira"
-                                            onClick={() =>
-                                                handleRemoverCartao(index)
-                                            }
-                                        />
+                                    <div className="cartaoEditarExcluir">
+                                        <div className="cartaoEditarListar">
+                                            <Link to={`/edit/${index}`}>
+                                                <img
+                                                    src={editarIMG}
+                                                    alt="Imagem da ferramenta de editar"
+                                                />
+                                            </Link>
+                                        </div>
+
+                                        <div className="cartaoExcluirListar">
+                                            <img
+                                                src={deleteIMG}
+                                                alt="Imagem da lixeira"
+                                                onClick={() =>
+                                                    handleRemoverCartao(index)
+                                                }
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                             </li>

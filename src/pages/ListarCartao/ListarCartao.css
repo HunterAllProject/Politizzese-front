@@ -1,5 +1,9 @@
-.ConteinerListarCartao{
-    height: 100vh;
+.ConteinerListarCartao {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 1%;
+    margin-bottom: 10%;
 }
 
 .tituloListarCartao h1 {
@@ -14,4 +18,181 @@
     height: 2px;
     max-width: 98%;
     margin-left: 9px;
+}
+
+.DescricaoListarCartao {
+    display: flex;
+    flex-direction: column; /*mexe no botão de adicionar*/
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+}
+
+.listarCartaoUl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /*posição dos cards*/
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.listarCartaoLi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    width: 300px;
+    background-color: #0098b2;
+    padding: 15px;
+    border-radius: 10px;
+    gap: 20px;
+    box-shadow: 1px 1px 2px rgb(146, 137, 137);
+}
+
+.containerDescListarCartao1 img{
+    height:70px;
+}
+
+.titulo-cartão h1 {
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.titulo-cartão,
+.listar-number {
+    margin-top: 5px;
+    color: #1e1e1e;
+}
+
+.listar-expiry {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+
+.listar-expiry p,
+.listar-number p {
+    font-size: 12px;
+}
+
+.cartaoEditarExcluir {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.1s;
+}
+
+.cartaoEditarListar a:hover,
+.cartaoExcluirListar img:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.AdicionarListarCartao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 200px;
+    cursor: pointer;
+    background-color: #9850eb;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 1px 1px 2px rgb(146, 137, 137);
+    transition: 0.1s;
+    margin-bottom: 50px;
+}
+
+.AdicionarListarCartao a {
+    color: #fff;
+}
+
+.AdicionarListarCartao:hover {
+    background-color: #5a2f8b;
+}
+
+@media(max-width: 800px){
+    .ConteinerListarCartao {
+        margin-bottom: 10%;
+    }
+    
+    .tituloListarCartao h1 {
+        margin-top: 20px;
+    }
+
+    .barraListarCartao {
+        max-width: 97%;
+        margin-left: 9px;
+    }
+    
+    .DescricaoListarCartao {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .listarCartaoUl {
+        margin-top: 40px;
+        gap: 20px;
+    }
+    
+    .listarCartaoLi {
+        height: 135px;
+        width: 290px;
+        gap: 10px;
+    }
+
+    .titulo-cartão h1 {
+        font-size: 15px;
+    }
+    
+    .titulo-cartão,
+    .listar-number {
+        margin-top: 3px;
+    }
+    
+    .listar-expiry {
+        margin-top: 8px;
+    
+    }
+    
+    .listar-expiry p,
+    .listar-number p {
+        font-size: 12px;
+    } 
+
+    .cartaoEditarExcluir {
+        gap: 10px;
+        margin-top: 15px;
+        transition: 0.1s;
+    }
+    
+    .cartaoEditarListar a:hover,
+    .cartaoExcluirListar img:hover {
+        border-radius: 10px;
+    }
+    
+    .AdicionarListarCartao {
+        height: 30px;
+        width: 200px;
+        border-radius: 5px;
+        font-size: 13px;
+        margin-top: 40px;
+    }
+}
+
+@media(max-width: 300px){
+    .listarCartaoLi {
+        height: 135px;
+        width: 260px;
+        gap: 10px;
+    }
 }
