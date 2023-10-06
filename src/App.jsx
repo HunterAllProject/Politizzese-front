@@ -4,7 +4,7 @@ import { Login } from "./pages/Login/Login.jsx";
 import { Cadastro } from "./pages/Cadastro/Cadastro.jsx";
 import { RecSenha } from "./pages/RecSenha/RecSenha.jsx";
 import { AddCartao } from "./pages/AddCartao/AddCartao.jsx";
-import { ListarCartao } from "./pages/ListarCartao/ListarCartao.jsx";
+import { ListarCartao } from "./pages/ListarCartao/ListarCartao.tsx";
 import { NovosServicos } from "./pages/NovosServicos/NovosServicos.jsx";
 import {Assinaturas} from './pages/Assinaturas/Assinaturas.jsx';
 
