@@ -6,20 +6,26 @@ import { Link } from "react-router-dom";
 import { Navbar } from "../../components/Navbar/Navbar.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
 import "./ListarCartao.css";
+import { useFetch } from "../../hooks/useFetch";
+
+type Cartoes = {
+    id: number,
+    idUsuario: number,
+    nome: string,
+    numero: string,
+    mes: string,
+    ano: string,
+    codigo: string
+}
 
 export const ListarCartao = ({}) => {
-    const [cartoes, setCartoes] = useState([]);
+    const {data} = useFetch<Cartoes[]>('https://politizzese-back.azurewebsites.net/1');
+    
 
-    useEffect(() => {
-        const storedCartoes = JSON.parse(localStorage.getItem("cartoes")) || [];
-        setCartoes(storedCartoes);
-    }, []);
+    function handleRemoverCartao(id: number): void {
+        console.log(id);
 
-    const handleRemoverCartao = (index) => {
-        const updateCartao = cartoes.filter((_, i) => i !== index);
-        localStorage.setItem("cartoes", JSON.stringify(updateCartao));
-        setCartoes(updateCartao);
-    };
+    }
 
     return (
         <>
@@ -32,7 +38,7 @@ export const ListarCartao = ({}) => {
 
                 <div className="DescricaoListarCartao">
                     <ul className="listarCartaoUl">
-                        {cartoes.map((cartao, index) => (
+                        {data?.map((cartao, index) => (
                             <li key={index} className="listarCartaoLi">
                                 <div  className="containerDescListarCartao1">
                                     <img src={cartaoIMG} alt="" />
@@ -45,11 +51,11 @@ export const ListarCartao = ({}) => {
                                         </div>
 
                                         <div className="listar-number">
-                                            <p>{cartao.number}</p>
+                                            <p>{cartao.numero}</p>
                                         </div>
 
                                         <div className="listar-expiry">
-                                            <p>Validade: {cartao.expiry}</p>
+                                            <p>Validade: {cartao.mes}/{cartao.ano}</p>
                                         </div>
                                     </div>
 
