@@ -120,6 +120,10 @@
     background-color: #5a2f8b;
 }
 
+.AdicionarListarCartao:active{
+    background-color: #13b731;
+}
+
 @media(max-width: 800px){
     .ConteinerListarCartao {
         margin-bottom: 10%;
