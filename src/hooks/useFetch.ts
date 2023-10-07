@@ -1,14 +1,36 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 
-export function useFetch<T = unknown>(url: string){
+const api = axios.create({
+    baseURL: 'https://politizzese-back.azurewebsites.net/'
+});
+
+export function useFetch<T = unknown>(url: string) {
     const [data, setData] = useState<T | null>(null)
-    
-    useEffect(()=>{
-        axios.get(url)
-        .then(response =>{
-            setData(response.data);
-        })
+
+    useEffect(() => {
+        api.get(url)
+            .then(response => {
+                setData(response.data);
+            })
     }, [])
-    return {data}
+    return { data }
 }
+
+export const Login = () => ({
+    validateToken: async (token: string) => {
+        const response = await api.post('/Usuario/validade', { token });
+        return response.data;
+
+    },
+    login: async (email: string, senha: string) => {
+        const response = await api.post('/Usuario/login', { email, senha });
+        console.log(response)
+        return response.data;
+
+    },
+    logout: async () => {
+        const response = await api.post('/Usuario/logout')
+        return response.data;
+    }
+})

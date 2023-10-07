@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import deleteIMG from "../../assets/delete.svg";
 import editarIMG from "../../assets/editar.svg";
 import cartaoIMG from "../../assets/cartao.svg";
