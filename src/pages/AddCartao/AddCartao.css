@@ -21,10 +21,15 @@
 }
 
 .butaoAddCartao button{
-    background-color: #9850EB;
+    background-color:#5a2f8b;
     transition: 0.1s;
 }
 
 .butaoAddCartao button:hover{
-    background-color: #5a2f8b;
+    background-color: #9850EB;
 }
+
+.butaoAddCartao button:active{
+    background-color: #13b731;
+}
+
