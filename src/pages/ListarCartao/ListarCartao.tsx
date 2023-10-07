@@ -19,12 +19,10 @@ type Cartoes = {
 }
 
 export const ListarCartao = ({}) => {
-    const {data} = useFetch<Cartoes[]>('1');
-    
+    const {data} = useFetch<Cartoes[]>('https://politizzese-back.azurewebsites.net/1');
 
     function handleRemoverCartao(id: number): void {
         console.log(id);
-
     }
 
     return (
