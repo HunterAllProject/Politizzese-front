@@ -6,10 +6,26 @@ import logoIMGLogin from "../../assets/politizzeseLogo.svg";
 import ImgDesignLogin from "../../assets/cameraDesign.svg";
 import { NavbarLogin } from "../../components/Navbar/NavbarLogin.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
+import { authContext } from "../../context/auth/authContext";
+import {useContext} from "react";
 
 export const Login = () => {
+    const auth = useContext(authContext);
     const [senha, setSenha] = useState("");
     const [email, setEmail] = useState("");
+
+    const login = async () => {
+        if (email && senha) {
+            const logado = await auth.login(email, senha);
+            if (logado) {
+                alert("USuairo não existe");
+                //Navigator('/')
+            }
+            else {
+                alert("USuairo não existe");
+            }
+        }
+    }
 
     return (
         <>
@@ -25,7 +41,6 @@ export const Login = () => {
                             <img src={logoIMGLogin} alt="logo do site" />
                         </div>
 
-                        <form>
                             <div className="formularioLogin">
                                 <div className="inputsLogin">
                                     <TextField
@@ -64,8 +79,8 @@ export const Login = () => {
                                 </div>
                             </div>
 
-                            <button type="submit">Entrar</button>
-                        </form>
+                            <button onClick={login} type="submit">Entrar</button>
+                       
                         <p>
                             Ainda não tem conta?
                             <Link to="/cadastro"> Criar Conta</Link>

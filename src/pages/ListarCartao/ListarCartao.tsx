@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import deleteIMG from "../../assets/delete.svg";
 import editarIMG from "../../assets/editar.svg";
 import cartaoIMG from "../../assets/cartao.svg";
@@ -19,7 +19,7 @@ type Cartoes = {
 }
 
 export const ListarCartao = ({}) => {
-    const {data} = useFetch<Cartoes[]>('https://politizzese-back.azurewebsites.net/1');
+    const {data} = useFetch<Cartoes[]>('1');
     
 
     function handleRemoverCartao(id: number): void {
