@@ -6,21 +6,22 @@ import { RecSenha } from "./pages/RecSenha/RecSenha.jsx";
 import { AddCartao } from "./pages/AddCartao/AddCartao.jsx";
 import { ListarCartao } from "./pages/ListarCartao/ListarCartao.tsx";
 import { NovosServicos } from "./pages/NovosServicos/NovosServicos.jsx";
-import {Assinaturas} from './pages/Assinaturas/Assinaturas.jsx';
+import { Assinaturas } from './pages/Assinaturas/Assinaturas.jsx';
 
 export const App = () => {
     return (
         <>
             <Router>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/cadastro" element={<Cadastro />} />
                     <Route path="/login" element={<Login />} />
+                    <Route path="/cadastro" element={<Cadastro />} />
                     <Route path="/recsenha" element={<RecSenha />} />
-                    <Route path="/addcartao" element={<AddCartao />} />
-                    <Route path="/listarcartao" element={<ListarCartao />} />
-                    <Route path="/novosservicos" element={<NovosServicos />} />
-                    <Route path="/assinaturas" element={<Assinaturas />} />
+                    
+                        <Route path="/" element={ <Home />} />
+                        <Route path="/addcartao" element={<AddCartao />} />
+                        <Route path="/listarcartao" element={<ListarCartao />} />
+                        <Route path="/novosservicos" element={<NovosServicos />} />
+                        <Route path="/assinaturas" element={<Assinaturas />} />
                 </Routes>
             </Router>
         </>
