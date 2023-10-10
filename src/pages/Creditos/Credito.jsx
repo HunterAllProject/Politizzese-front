@@ -18,7 +18,7 @@ export const Credito = () => {
                     <li className="creditoLi">
                         <div className="creditoQtd">
                             <img src={cifraoIMG} alt="Cifrão" />
-                            <h1>05</h1>
+                            <h2>05</h2>
                         </div>
 
                         <div className="creditoValor">
@@ -41,7 +41,7 @@ export const Credito = () => {
                     <li className="creditoLi">
                         <div className="creditoQtd">
                             <img src={cifraoIMG} alt="Cifrão" />
-                            <h1>05</h1>
+                            <h2>10</h2>
                         </div>
 
                         <div className="creditoValor">
@@ -49,7 +49,7 @@ export const Credito = () => {
                                 <h3>R$</h3>
                             </div>
                             <div className="creditoReais">
-                                <h1>175</h1>
+                                <h1>300</h1>
                             </div>
                             <div className="creditoCifrao">
                                 <h3>,00</h3>
@@ -64,7 +64,7 @@ export const Credito = () => {
                     <li className="creditoLi">
                         <div className="creditoQtd">
                             <img src={cifraoIMG} alt="Cifrão" />
-                            <h1>05</h1>
+                            <h2>25</h2>
                         </div>
 
                         <div className="creditoValor">
@@ -72,7 +72,7 @@ export const Credito = () => {
                                 <h3>R$</h3>
                             </div>
                             <div className="creditoReais">
-                                <h1>175</h1>
+                                <h1>750</h1>
                             </div>
                             <div className="creditoCifrao">
                                 <h3>,00</h3>
@@ -87,7 +87,7 @@ export const Credito = () => {
                     <li className="creditoLi">
                         <div className="creditoQtd">
                             <img src={cifraoIMG} alt="Cifrão" />
-                            <h1>05</h1>
+                            <h2>50</h2>
                         </div>
 
                         <div className="creditoValor">
@@ -95,7 +95,7 @@ export const Credito = () => {
                                 <h3>R$</h3>
                             </div>
                             <div className="creditoReais">
-                                <h1>175</h1>
+                                <h1>1500</h1>
                             </div>
                             <div className="creditoCifrao">
                                 <h3>,00</h3>
