@@ -6,22 +6,26 @@ import { RecSenha } from "./pages/RecSenha/RecSenha.jsx";
 import { AddCartao } from "./pages/AddCartao/AddCartao.jsx";
 import { ListarCartao } from "./pages/ListarCartao/ListarCartao.tsx";
 import { NovosServicos } from "./pages/NovosServicos/NovosServicos.jsx";
+import { Extrato } from "./pages/Extrato/Extrato.jsx";
+import { Credito } from "./pages/Creditos/Credito.jsx";
 import { Assinaturas } from './pages/Assinaturas/Assinaturas.jsx';
 
 export const App = () => {
     return (
         <>
-            <Router>
+             <Router>
                 <Routes>
+                    <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/cadastro" element={<Cadastro />} />
+                    <Route path="/login" element={<Login />} />
                     <Route path="/recsenha" element={<RecSenha />} />
-                    
-                        <Route path="/" element={ <Home />} />
-                        <Route path="/addcartao" element={<AddCartao />} />
-                        <Route path="/listarcartao" element={<ListarCartao />} />
-                        <Route path="/novosservicos" element={<NovosServicos />} />
-                        <Route path="/assinaturas" element={<Assinaturas />} />
+                    <Route path="/addcartao" element={<AddCartao />} />
+                    <Route path="/listarcartao" element={<ListarCartao />} />
+                    <Route path="/novosservicos" element={<NovosServicos />} />
+                    <Route path="/assinaturas" element={<Assinaturas />} />
+                    <Route path="/extrato" element={<Extrato />} />
+                    <Route path="/credito" element={<Credito />} />
                 </Routes>
             </Router>
         </>

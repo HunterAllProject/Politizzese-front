@@ -9,7 +9,7 @@
 .barraAssinaturas {
  background-color: #000000b1;
  height: 2px;
- max-width: 99%;
+ max-width: 98%;
  margin-left: 9px;
  margin-bottom: 40px;
 }
@@ -24,7 +24,7 @@
  flex-direction: column;
  justify-content: center;
  align-items: center;
- margin-top: 80px;
+ margin-top: 50px;
 
 }
 
@@ -40,6 +40,7 @@
  font-family: Nunito;
  font-size: 20px;
  padding: 10px;
+
 }
 
 
@@ -264,9 +265,7 @@
  margin-bottom: 80px;
 }
 
-
 .botao_assinaturas button {
- margin-top: 30px;
  height: 40px;
  width: 300px;
  border: none;
@@ -285,6 +284,10 @@
 
 .botao_assinaturas button:hover {
  background-color: #5a2f8b;
+}
+
+.botao_assinaturas button:active{
+    background-color: #13b731;
 }
 
 
