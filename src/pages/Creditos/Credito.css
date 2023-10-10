@@ -1,4 +1,4 @@
-.creditoContainer{
+.creditoContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,82 +7,92 @@
     margin-bottom: 80px;
 }
 
-.creditoUl{
+.creditoUl {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     margin-bottom: 100px;
-    max-width: 100%;
-    gap: 70px;
+    gap: 50px;
 }
 
-.creditoLi{
+.creditoLi {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    padding: 20px;
+    padding: 15px;
+    width: 450px;
     border-radius: 10px;
-    background-color: #0098B2;
+    background-color: #0098b2;
     box-shadow: 1px 1px 5px rgb(146, 137, 137);
 }
 
-.creditoQtd{
+.creditoQtd {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
+    align-items: start;
     padding: 10px;
+    gap: 2px;
+    width: 100px;
     background-color: #fff;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
-.creditoValor{
+.creditoQtd h2 {
+    font-size: 25px;
+    font-family: Nunito;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.creditoQtd img {
+    margin-top: 3px;
+    width: 35px;
+}
+
+.creditoValor {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
 }
 
-.creditoCifrao h3{
+.creditoCifrao h3 {
     font-size: 15px;
     font-family: Nunito;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.creditoReais h1{   
+.creditoReais h1 {
     color: black;
     font-size: 40px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.creditoQtd img{
-    width: 35px; 
-}
-
-.creditoQtd h1{
+.creditoQtd h1 {
     color: black;
     font-size: 25px;
     font-weight: bold;
-    font-family: Nunito;   
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    font-family: Nunito;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.creditoValor{
+.creditoValor {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.creditoComprar button{
+.creditoComprar button {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background-color: #9850EB;
+    background-color: #9850eb;
     border-radius: 10px;
     border: none;
     cursor: pointer;
@@ -92,17 +102,65 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.creditoInformativo{
+.creditoInformativo {
     padding: 20px;
-    border: #5A2F8B;
+    border: #5a2f8b;
     background-color: #fff;
     border-radius: 10px;
 }
 
-.creditoInformativo p{
+.creditoInformativo p {
     font-family: Nunito;
     font-size: 20px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    color: #5A2F8B;
+    color: #5a2f8b;
     font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .creditoContainer {
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+    .creditoUl {
+        margin-bottom: 50px;
+        gap: 25px;
+    }
+    .creditoLi {
+        gap: 20px;
+        padding: 10px;
+        width: 320px;
+    }
+    .creditoQtd {
+        border-radius: 5px;
+        padding: 2px;
+        width: 80px;
+    }
+    .creditoValor {
+        gap: 5px;
+    }
+    .creditoCifrao h3 {
+        font-size: 12px;
+    }
+    .creditoReais h1 {
+        font-size: 25px;
+    }
+    .creditoQtd img {
+        width: 30px;
+    }
+    .creditoQtd h1 {
+        font-size: 20px;
+    }
+    .creditoComprar button {
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .creditoInformativo {
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .creditoInformativo p {
+        font-size: 12px;
+    }
 }
