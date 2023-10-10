@@ -13,13 +13,12 @@ import { Credito } from "./pages/Creditos/Credito.jsx";
 export const App = () => {
     return (
         <>
-            <Router>
+             <Router>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/cadastro" element={<Cadastro />} />
                     <Route path="/login" element={<Login />} />
-                    <Route path="/cadastro" element={<Cadastro />} />
                     <Route path="/recsenha" element={<RecSenha />} />
                     <Route path="/addcartao" element={<AddCartao />} />
                     <Route path="/listarcartao" element={<ListarCartao />} />

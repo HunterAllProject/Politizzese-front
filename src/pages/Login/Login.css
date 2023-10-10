@@ -60,7 +60,7 @@
     width: 500px;
 }
 
-.LogoInputLogin form button {
+.LogoInputLogin button {
     margin-top: 30px;
     height: 40px;
     width: 300px;
@@ -75,7 +75,7 @@
     transition: 0.1s;
 }
 
-.LogoInputLogin form button:hover {
+.LogoInputLogin button:hover {
     background-color: #5a2f8b;
 }
 
@@ -129,7 +129,7 @@
         height: 15px;
     }
 
-    .LogoInputLogin form button {
+    .LogoInputLogin button {
         margin-top: 25px;
         height: 35px;
         width: 200px;   
@@ -162,7 +162,7 @@
         height: 15px;
     }
 
-    .LogoInputLogin form button {
+    .LogoInputLogin button {
         margin-top: 25px;
         height: 30px;
         width: 191px;   
