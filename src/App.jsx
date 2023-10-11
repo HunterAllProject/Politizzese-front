@@ -14,20 +14,18 @@ import { RequireAuth } from './context/auth/RequireAuth'
 export const App = () => {
     return (
         <>
-             <Router>
+            <Router>
                 <Routes>
                     <Route path="/login" element={<Login />} />
                     <Route path="/cadastro" element={<Cadastro />} />
                     <Route path="/recsenha" element={<RecSenha />} />
-                    
-                        <Route path="/" element={ <Home />} />
-                        <Route path="/addcartao" element={<AddCartao />} />
-                        <Route path="/listarcartao" element={<ListarCartao />} />
-                        <Route path="/novosservicos" element={<NovosServicos />} />
-                        <Route path="/assinaturas" element={<Assinaturas />} /> 
-                        <Route path="/extrato" element={<Extrato />} />
-                        <Route path="/credito" element={<Credito />} />
-                
+                    <Route path="/" element={<RequireAuth> <Home /></RequireAuth>} />
+                    <Route path="/addcartao" element={<RequireAuth> <AddCartao /></RequireAuth>} />
+                    <Route path="/listarcartao" element={<RequireAuth> <ListarCartao /></RequireAuth>} />
+                    <Route path="/novosservicos" element={<RequireAuth><NovosServicos /></RequireAuth>} />
+                    <Route path="/assinaturas" element={<RequireAuth><Assinaturas /></RequireAuth>} />
+                    <Route path="/extrato" element={<RequireAuth><Extrato /></RequireAuth>} />
+                    <Route path="/credito" element={<RequireAuth><Credito /></RequireAuth>} />
                 </Routes>
             </Router>
         </>

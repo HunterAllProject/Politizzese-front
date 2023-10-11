@@ -13,13 +13,9 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
         const data = await api.login(email, senha);
         
         if (data) {
-            console.log('Entrou Aaqui', true)
             setUsuario(data);
-            console.log(usuario)
             return true;
-        }
-        
-        console.log(' nnn Entrou Aaqui', false)
+        }        
         return false;
     }
 
