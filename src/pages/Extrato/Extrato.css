@@ -12,7 +12,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 35px;
 }
 
 .extratLi{
@@ -20,9 +20,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    gap: 20px;
+    gap: 10px;
     background-color: #0098b2;
     padding: 20px;
+    width: 700px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgb(146, 137, 137);
 }
@@ -55,6 +56,65 @@
 
 .extratoDate span {
     font-size: 15px;
-
 }
+
+@media(max-width: 750px){
+    .containerExtrato{
+        padding: 15px;
+        margin-bottom: 80px;
+    }
+    .extratoUl{
+        gap: 30px;
+    }
+    .extratLi{
+        gap: 10px;
+        padding: 15px;
+        width: 500px;
+    }
+    .extratoCredito{
+        padding: 10px;
+    }
+    .extratoCredito p{
+        font-size: 10px;
+    }
+    .extratoDate h1{
+        font-size: 16px;
+    }
+    .extratoDate span {
+        font-size: 11.5px;
+    }
+}
+
+@media(max-width: 550px){
+    .containerExtrato{
+        padding: 10px;
+        margin-bottom: 80px;
+    }
+    .extratoUl{
+        gap: 20px;
+    }
+    .extratLi{
+        gap: 10px;
+        padding: 10px;
+        width: 340px;
+        border-radius: 5px;
+    }
+    .extratoCredito{
+        padding: 5px;
+        width: 90px;
+        border-radius: 3px;
+    }
+    .extratoCredito p{
+        font-size: 9px;
+    }
+    .extratoDate h1{
+        font-size: 11px;
+    }
+    .extratoDate span {
+        font-size: 9px;
+    }
+}
+
+
+
 
