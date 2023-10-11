@@ -9,13 +9,13 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
     const api = useApi();
 
     const login = async (email: string, senha: string) => {
-        
+
         const data = await api.login(email, senha);
-        
+
         if (data) {
             setUsuario(data);
             return true;
-        }        
+        }
         return false;
     }
 
