@@ -21,7 +21,7 @@ export const Extrato = () => {
 
                         <div className="extratoDate">
                             <h1>
-                                Compra de créditos:{" "}
+                                Compra de créditos:&nbsp;{" "}
                                 <span> em 25/09/2023 às 16:07</span>
                             </h1>
                         </div>
@@ -34,7 +34,7 @@ export const Extrato = () => {
 
                         <div className="extratoDate">
                             <h1>
-                                Compra de serviços:{" "}
+                                Compra de serviços:&nbsp;{" "}
                                 <span> em 25/09/2023 às 16:07</span>
                             </h1>
                         </div>
@@ -47,7 +47,7 @@ export const Extrato = () => {
 
                         <div className="extratoDate">
                             <h1>
-                                Compra de créditos:{" "}
+                                Compra de créditos:&nbsp;{" "}
                                 <span> em 25/09/2023 às 16:07</span>
                             </h1>
                         </div>
@@ -60,7 +60,7 @@ export const Extrato = () => {
 
                         <div className="extratoDate">
                             <h1>
-                                Compra de serviços:{" "}
+                                Compra de serviços:&nbsp;{" "}
                                 <span> em 25/09/2023 às 16:07</span>
                             </h1>
                         </div>
