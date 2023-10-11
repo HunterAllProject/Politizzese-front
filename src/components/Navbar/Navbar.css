@@ -1,4 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .header {
+    max-width: 100%;
+    min-width: 100vh;
+    background-color: #5a2f8b;
+}
+
+.NavHeader {
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.logoHeaderLogin{
+    width: 250px;
+    padding: 20px;
+}
+
+.logoHeader {
+    width: 200px;
+}
+.imgPerfilHeader {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.NavHeader ul {
+    width: 100%;
+    text-align: right;
+}
+
+.NavHeader ul li {
+    display: inline-block;
+    margin: 30px 20px;
+}
+
+.NavHeader ul li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.subMenuWrap {
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 360px;
+    max-width: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.subMenuWrap.open_menu{
+    max-width: 400px;
+}
+
+.subMenuHeader {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+.userInfoHeader {
+    display: flex;
+    align-items: center;
+}
+
+.userInfoHeader h3 {
+    font-weight: bold;
+    color: #000000b1;
+}
+
+.userInfoHeader img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.subMenuHeader hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #000000b1;
+    margin: 15px 0 10px;
+}
+
+.subMenuLinkHeader {
+    display: flex;
+    align-items: center;
+    color: #000000b1;
+    margin: 12px 0;
+}
+
+.subMenuLinkHeader p {
+    width: 100%;
+    font-size: 15px;
+}
+
+.subMenuLinkHeader img{
+    width: 40px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.subMenuLinkHeader span{
+    font-size: 15px;
+    transition: transform 0.5s;
+}
+
+.subMenuLinkHeader:hover span{
+    transform: translateX(5px);
+}
+
+.subMenuLinkHeader:hover p{
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+/* .header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -110,4 +244,4 @@
     .imgPerfilHeader img {
         max-width: 30px;
     }
-}
+} */
