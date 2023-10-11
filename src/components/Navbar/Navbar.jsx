@@ -8,15 +8,15 @@ export const Navbar = () => {
     return (
         <header className="header" id="header">
             <div className="imgLogoHeader">
-            <Link to="/">
-                <img src={logoIMG} alt="Imagem da logo" />
-            </Link>
-                 <ul>
+                <Link to="/">
+                    <img src={logoIMG} alt="Imagem da logo" />
+                </Link>
+                <ul>
                     <li>
-                        <Link to="/servicos">Serviços</Link>
+                        <Link to="/">pedidos</Link>
                     </li>
                     <li>
-                        <Link to="/pedidos">pedidos</Link>
+                        <Link to="/novosservicos">Serviços</Link>
                     </li>
                     <li>
                         <Link to="/assinaturas">Assinaturas</Link>
@@ -25,7 +25,7 @@ export const Navbar = () => {
             </div>
 
             <div className="imgPerfilHeader">
-                <img src={perfilIMG} alt="Imagem do perfil" /> 
+                <img src={perfilIMG} alt="Imagem do perfil" />
             </div>
         </header>
     );
