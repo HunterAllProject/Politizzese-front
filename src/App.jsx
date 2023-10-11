@@ -7,21 +7,22 @@ import { AddCartao } from "./pages/AddCartao/AddCartao.jsx";
 import { ListarCartao } from "./pages/ListarCartao/ListarCartao.tsx";
 import { NovosServicos } from "./pages/NovosServicos/NovosServicos.jsx";
 import { Assinaturas } from './pages/Assinaturas/Assinaturas.jsx';
+import { RequireAuth } from './context/auth/RequireAuth'
 
 export const App = () => {
     return (
         <>
             <Router>
                 <Routes>
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/cadastro" element={<Cadastro />} />
+                    <Route path="/login" element={<RequireAuth> <Login /></RequireAuth>} />
+                    <Route path="/cadastro" element={<RequireAuth><Cadastro /></RequireAuth>} />
                     <Route path="/recsenha" element={<RecSenha />} />
-                    
-                        <Route path="/" element={ <Home />} />
-                        <Route path="/addcartao" element={<AddCartao />} />
-                        <Route path="/listarcartao" element={<ListarCartao />} />
-                        <Route path="/novosservicos" element={<NovosServicos />} />
-                        <Route path="/assinaturas" element={<Assinaturas />} />
+
+                    <Route path="/" element={<Home />} />
+                    <Route path="/addcartao" element={<AddCartao />} />
+                    <Route path="/listarcartao" element={<ListarCartao />} />
+                    <Route path="/novosservicos" element={<NovosServicos />} />
+                    <Route path="/assinaturas" element={<Assinaturas />} />
                 </Routes>
             </Router>
         </>

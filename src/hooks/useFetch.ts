@@ -17,7 +17,7 @@ export function useFetch<T = unknown>(url: string) {
     return { data }
 }
 
-export const Login = () => ({
+export const useApi = () => ({
     validateToken: async (token: string) => {
         const response = await api.post('/Usuario/validade', { token });
         return response.data;
@@ -25,7 +25,6 @@ export const Login = () => ({
     },
     login: async (email: string, senha: string) => {
         const response = await api.post('/Usuario/login', { email, senha });
-        console.log(response)
         return response.data;
 
     },
