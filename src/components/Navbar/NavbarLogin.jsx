@@ -7,13 +7,11 @@ export const NavbarLogin = () => {
     return (
         <header className="header" id="header">
             <div className="NavHeader">
-                <Link to="/">
-                    <img
-                        src={logoIMG}
-                        alt="Imagem da logo"
-                        className="logoHeaderLogin"
-                    />
-                </Link>
+                <img
+                    src={logoIMG}
+                    alt="Imagem da logo"
+                    className="logoHeader"
+                />
             </div>
         </header>
     );

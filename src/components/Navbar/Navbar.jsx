@@ -19,6 +19,7 @@ export const Navbar = () => {
                         src={logoIMG}
                         alt="Imagem da logo"
                         className="logoHeader"
+                        id="logoHeader"
                     />
                 </Link>
                 <ul>
