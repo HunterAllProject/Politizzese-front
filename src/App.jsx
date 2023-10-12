@@ -7,7 +7,7 @@ import { AddCartao } from "./pages/AddCartao/AddCartao.jsx";
 import { ListarCartao } from "./pages/ListarCartao/ListarCartao.tsx";
 import { NovosServicos } from "./pages/NovosServicos/NovosServicos.jsx";
 import { Extrato } from "./pages/Extrato/Extrato.jsx";
-import { Credito } from "./pages/Creditos/Credito.jsx";
+import { Credito } from "./pages/Creditos/Credito.tsx";
 import { Assinaturas } from './pages/Assinaturas/Assinaturas.jsx';
 import { RequireAuth } from './context/auth/RequireAuth'
 

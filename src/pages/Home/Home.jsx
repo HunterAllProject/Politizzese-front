@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { Navbar } from "../../components/Navbar/Navbar.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import cartaoIMG from "../../assets/cartao.svg";
 import arquivoIMG from "../../assets/arquivo.svg";
+import { AuthContext } from "../../context/auth/AuthContext";
+import { useFetch } from "../../hooks/useFetch";
 
-export const Home = () => {
+export const Home = ({ }) => {
+
+    const auth = useContext(AuthContext);
+    const { data } = useFetch('Credito/TotalCredito/' + auth.usuario.id);
     return (
         <>
             <Navbar />
@@ -14,11 +19,11 @@ export const Home = () => {
                 <div className="containerCreditoHome">
                     <div className="creditosDisponiveisHome">
                         {/* Lógica de créditos */}
-                        <h1 className="valorCreditosHome">0</h1>
+                        <h1 className="valorCreditosHome">{data}</h1>
                         <p className="disponivelHome">Creditos Disponíveis</p>
                     </div>
 
-                    <Link to="/comprarcredito">
+                    <Link to="/credito">
                         <div className="comprarCreditosHome">
                             <p>Comprar Créditos</p>
                         </div>

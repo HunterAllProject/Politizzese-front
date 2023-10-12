@@ -7,19 +7,16 @@ import { Navbar } from "../../components/Navbar/Navbar.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
 import "./ListarCartao.css";
 import { useFetch } from "../../hooks/useFetch";
+import { Cartao } from "../../types/Cartao";
+import { AuthContext } from "../../context/auth/AuthContext";
+import { useContext } from "react";
 
-type Cartoes = {
-    id: number,
-    idUsuario: number,
-    nome: string,
-    numero: string,
-    mes: string,
-    ano: string,
-    codigo: string
-}
 
-export const ListarCartao = ({}) => {
-    const {data} = useFetch<Cartoes[]>('https://politizzese-back.azurewebsites.net/1');
+
+export const ListarCartao = ({ }) => {
+    const auth = useContext(AuthContext);
+    
+    const { data } = useFetch<Cartao[]>(String(auth.usuario!.id));
 
     function handleRemoverCartao(id: number): void {
         console.log(id);
@@ -38,7 +35,7 @@ export const ListarCartao = ({}) => {
                     <ul className="listarCartaoUl">
                         {data?.map((cartao, index) => (
                             <li key={index} className="listarCartaoLi">
-                                <div  className="containerDescListarCartao1">
+                                <div className="containerDescListarCartao1">
                                     <img src={cartaoIMG} alt="" />
                                 </div>
 
@@ -72,7 +69,7 @@ export const ListarCartao = ({}) => {
                                                 src={deleteIMG}
                                                 alt="Imagem da lixeira"
                                                 onClick={() =>
-                                                    handleRemoverCartao(index)
+                                                    handleRemoverCartao(cartao.id)
                                                 }
                                             />
                                         </div>
