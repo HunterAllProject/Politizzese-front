@@ -9,7 +9,6 @@ import { NovosServicos } from "./pages/NovosServicos/NovosServicos.jsx";
 import { Assinaturas } from "./pages/Assinaturas/Assinaturas.jsx";
 import { Extrato } from "./pages/Extrato/Extrato.jsx";
 import { Credito } from "./pages/Creditos/Credito.tsx";
-import { Assinaturas } from './pages/Assinaturas/Assinaturas.jsx';
 import { RequireAuth } from './context/auth/RequireAuth'
 
 export const App = () => {
