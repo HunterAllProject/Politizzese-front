@@ -3,7 +3,6 @@ import "./Login.css";
 import { TextField } from "@mui/material";
 import { Link, Navigate } from "react-router-dom";
 import logoIMGLogin from "../../assets/politizzeseLogo.svg";
-import ImgDesignLogin from "../../assets/cameraDesign.svg";
 import { NavbarLogin } from "../../components/Navbar/NavbarLogin.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
 import { AuthContext } from "../../context/auth/AuthContext";
@@ -34,9 +33,6 @@ export const Login = () => {
 
             <div className="sectionLogin">
                 <div className="login">
-                    {/* <div className="imgFormLogin">
-                    <img src={ImgDesignLogin} alt="" />
-                </div> */}
                     <div className="LogoInputLogin">
                         <div className="ImgLogoLogin">
                             <img src={logoIMGLogin} alt="logo do site" />
