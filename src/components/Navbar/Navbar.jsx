@@ -14,25 +14,29 @@ export const Navbar = () => {
     return (
         <header className="header" id="header">
             <div className="NavHeader">
-                <Link to="/">
-                    <img
-                        src={logoIMG}
-                        alt="Imagem da logo"
-                        className="logoHeader"
-                        id="logoHeader"
-                    />
-                </Link>
-                <ul>
-                    <li>
-                        <Link to="/">pedidos</Link>
-                    </li>
-                    <li>
-                        <Link to="/novosservicos">Serviços</Link>
-                    </li>
-                    <li>
-                        <Link to="/assinaturas">Assinaturas</Link>
-                    </li>
-                </ul>
+                <div className="NavMenuLogoHeader">
+                    <Link to="/">
+                        <img
+                            src={logoIMG}
+                            alt="Imagem da logo"
+                            className="logoHeader"
+                            id="logoHeader"
+                        />
+                    </Link>
+
+                    <ul className="navListHeader">
+                        <li>
+                            <Link to="/">pedidos</Link>
+                        </li>
+                        <li>
+                            <Link to="/novosservicos">Serviços</Link>
+                        </li>
+                        <li>
+                            <Link to="/assinaturas">Assinaturas</Link>
+                        </li>
+                    </ul>
+                </div>
+
                 <img
                     src={perfilIMG}
                     alt="Imagem do perfil"
