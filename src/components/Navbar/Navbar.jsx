@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logoIMG from "../../assets/politizzeseLogo.svg";
 import perfilIMG from "../../assets/imgPerfil.svg";
+import extratoIMG from "../../assets/extrato.svg";
+import creditoIMG from "../../assets/credito.svg";
+import configIMG from "../../assets/config.svg";
+import suporteIMG from "../../assets/suporte.svg";
+import sairIMG from "../../assets/sair.svg";
 import "./Navbar.css";
 
 export const Navbar = () => {
@@ -58,31 +63,31 @@ export const Navbar = () => {
                         <hr />
 
                         <Link to="#" className="subMenuLinkHeader">
-                            <img src="#" />
+                            <img src={extratoIMG} />
                             <p>Extrato</p>
                             <span>{">"}</span>
                         </Link>
 
                         <Link to="#" className="subMenuLinkHeader">
-                            <img src="#" />
+                            <img src={creditoIMG} />
                             <p>Créditos</p>
                             <span>{">"}</span>
                         </Link>
 
                         <Link to="#" className="subMenuLinkHeader">
-                            <img src="#" />
+                            <img src={configIMG} />
                             <p>Configurações & Privacidade</p>
                             <span>{">"}</span>
                         </Link>
 
                         <Link to="#" className="subMenuLinkHeader">
-                            <img src="#" />
+                            <img src={suporteIMG} />
                             <p>Ajuda & Suporte</p>
                             <span>{">"}</span>
                         </Link>
 
                         <Link to="#" className="subMenuLinkHeader">
-                            <img src="#" />
+                            <img src={sairIMG} />
                             <p>Sair</p>
                             <span>{">"}</span>
                         </Link>
