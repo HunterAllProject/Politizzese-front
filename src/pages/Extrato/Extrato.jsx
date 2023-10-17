@@ -7,9 +7,9 @@ export const Extrato = () => {
     return (
         <div>
             <Navbar />
-            <div className="tituloHome">
+            <div className="tituloGlobal">
                 <h1>Extrato</h1>
-                <div className="barraHome"> </div>
+                <div className="barraGlobal"> </div>
             </div>
 
             <div className="containerExtrato">

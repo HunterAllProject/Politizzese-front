@@ -8,9 +8,9 @@ export const Credito = () => {
     return (
         <div>
             <Navbar />
-            <div className="tituloHome">
+            <div className="tituloGlobal">
                 <h1>Créditos</h1>
-                <div className="barraHome"> </div>
+                <div className="barraGlobal"> </div>
             </div>
 
             <div className="creditoContainer">

@@ -10,9 +10,9 @@ export const Assinaturas = () => {
         <>
             <Navbar />
             <div className="assinaturasContainer">
-                <div className="tituloAssinaturas">
+                <div className="tituloGlobal">
                     <h1>Assinaturas</h1>
-                    <div className="barraAssinaturas"> </div>
+                    <div className="barraGlobal"> </div>
                 </div>
                 <div className="container_ass">
                     <div className="container_titulo_ass">
