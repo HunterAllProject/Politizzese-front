@@ -6,7 +6,7 @@ import cifraoIMG from "../../assets/cifrao.svg";
 
 export const Credito = () => {
     return (
-        <div>
+        <div className="creditoContainerBudy">
             <Navbar />
             <div className="tituloGlobal">
                 <h1>Créditos</h1>

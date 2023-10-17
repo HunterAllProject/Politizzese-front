@@ -1,9 +1,16 @@
+.containerCadastrarServicoBudy{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .containerCadastrarServico {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 40px;
+  flex: 1 1 0;
 }
 
 .cadastrarServicoForm {

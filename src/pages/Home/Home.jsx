@@ -3,13 +3,10 @@ import { Navbar } from "../../components/Navbar/Navbar.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import cartaoIMG from "../../assets/cartao.svg";
-import arquivoIMG from "../../assets/arquivo.svg";
-import { Titulo } from "../../components/Titulo/Titulo.jsx";
 
 export const Home = () => {
   return (
-    <>
+    <div className="cardCreditoHomeBudy">
       <Navbar />
       <div className="cardCreditoHome">
         <div className="containerCreditoHome">
@@ -39,6 +36,6 @@ export const Home = () => {
       </div>
 
       <Footer />
-    </>
+    </ div>
   );
 };
