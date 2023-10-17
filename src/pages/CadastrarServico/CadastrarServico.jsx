@@ -28,15 +28,16 @@ export const CadastrarServico = () => {
 
           <div className="descricaoCadastrarServico">
             <p>
-              O conteúdo enviado não poderá ultrapassar 2 GB;<br />
-              Após o envio você deverá indicar o que você quer que 
-              façamos com seu conteúdo de arte, vídeo ou áudio;
+              O conteúdo enviado não poderá ultrapassar 2 GB;
+              <br />
+              Após o envio você deverá indicar o que você quer que façamos com
+              seu conteúdo de arte, vídeo ou áudio;
             </p>
           </div>
           <div className="botaoCadastrarServicob">
-            <button type="submit">
-              <Link to="/cadastrarservicoconcluido">SALVAR</Link>
-            </button>
+            <Link to="/cadastrarservicoconcluido">
+              <button type="submit">SALVAR</button>
+            </Link>
           </div>
         </form>
       </div>
