@@ -10,9 +10,9 @@ export const CadastrarServicoConcluido = () => {
   return (
     <div>
       <Navbar />
-      <div className="tituloAssinaturas">
+      <div className="tituloAGlobal">
         <h1>Cadastrar Serviços</h1>
-        <div className="barraAssinaturas"></div>
+        <div className="barraAGlobal"></div>
       </div>
 
       <div className="containerCadastrarServicoConcluido">
