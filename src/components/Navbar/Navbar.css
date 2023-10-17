@@ -1,221 +1,221 @@
 .header {
-    max-width: 100%;
-    min-width: 100vh;
-    background-color: #5a2f8b;
+  max-width: 100%;
+  min-width: 100vh;
+  background-color: #5a2f8b;
 }
 
 .NavHeader {
-    width: 100%;
-    padding: 20px 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
 /* - - - - - */
 
-.NavMenuLogoHeader{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+.NavMenuLogoHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .logoHeader {
-    max-width: 200px;
+  max-width: 200px;
 }
 
 .imgPerfilHeader {
-    width: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin-left: 30px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 30px;
 }
 
 .NavHeader ul {
-    width: 100%;
-    text-align: right;
+  width: 100%;
+  text-align: right;
 }
 
 .NavHeader ul li {
-    display: inline-block;
-    margin: 10px 20px;
+  display: inline-block;
+  margin: 10px 20px;
 }
 
 .NavHeader ul li a {
-    color: #fff;
-    font-weight: bold;
+  color: #fff;
+  font-weight: bold;
 }
 
 .subMenuWrap {
-    position: absolute;
-    top: 100%;
-    right: 10%;
-    width: 360px;
-    max-width: 0px;
-    overflow: hidden;
-    transition: max-height 0.5s;
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 360px;
+  max-width: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
 }
 
-.subMenuWrap.open_menu{
-    max-width: 400px;
+.subMenuWrap.open_menu {
+  max-width: 400px;
 }
 
 .subMenuHeader {
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px;
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
 }
 
 .userInfoHeader {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .userInfoHeader h3 {
-    font-weight: bold;
-    color: #000000b1;
+  font-weight: bold;
+  color: #000000b1;
 }
 
 .userInfoHeader img {
-    width: 50px;
-    border-radius: 50%;
-    margin-right: 15px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
 }
 
 .subMenuHeader hr {
-    border: 0;
-    height: 1px;
-    width: 100%;
-    background-color: #000000b1;
-    margin: 15px 0 10px;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #000000b1;
+  margin: 15px 0 10px;
 }
 
 .subMenuLinkHeader {
-    display: flex;
-    align-items: center;
-    color: #000000b1;
-    margin: 12px 0;
+  display: flex;
+  align-items: center;
+  color: #000000b1;
+  margin: 12px 0;
 }
 
 .subMenuLinkHeader p {
-    width: 100%;
-    font-size: 15px;
+  width: 100%;
+  font-size: 15px;
 }
 
-.subMenuLinkHeader img{
+.subMenuLinkHeader img {
+  width: 40px;
+  padding: 10px;
+  margin-right: 5px;
+  transition: transform 0.5s;
+}
+
+.subMenuLinkHeader:hover img {
+  transform: translateX(1px);
+}
+
+.subMenuLinkHeader span {
+  font-size: 15px;
+  transition: transform 0.5s;
+}
+
+.subMenuLinkHeader:hover span {
+  transform: translateX(5px);
+}
+
+.subMenuLinkHeader:hover p {
+  font-weight: 600;
+}
+
+@media (max-width: 920px) {
+  .header {
+    min-width: 0vh;
+  }
+  .NavHeader {
+    padding: 15px 5%;
+  }
+  .NavMenuLogoHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .logoHeader {
+    max-width: 190px;
+  }
+  .imgPerfilHeader {
+    margin-left: 0px;
+  }
+  .NavHeader ul li {
+    margin: 5px 15px;
+    font-size: 14px;
+  }
+  .subMenuWrap {
+    right: 5%;
+    width: 300px;
+  }
+  .userInfoHeader img {
+    width: 45px;
+  }
+  .subMenuHeader hr {
+    margin: 10px 0 10px;
+  }
+  .subMenuLinkHeader {
+    margin: 10px 0;
+  }
+  .subMenuLinkHeader p {
+    font-size: 14px;
+  }
+  .subMenuLinkHeader img {
+    width: 35px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 540px) {
+  .header {
+    min-width: 0vh;
+  }
+  .NavHeader {
+    padding: 15px 5%;
+  }
+  .NavMenuLogoHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .logoHeader {
+    max-width: 150px;
+  }
+  .imgPerfilHeader {
+    margin-left: 0px;
+  }
+  .NavHeader ul li {
+    margin: 5px 10px;
+    font-size: 13px;
+  }
+  .subMenuWrap {
+    right: 5%;
+    width: 280px;
+  }
+  .userInfoHeader img {
     width: 40px;
-    padding: 10px;
-    margin-right: 5px;
-    transition: transform 0.5s;
-}
-
-.subMenuLinkHeader:hover img{
-    transform: translateX(1px);
-}
-
-.subMenuLinkHeader span{
-    font-size: 15px;
-    transition: transform 0.5s;
-}
-
-.subMenuLinkHeader:hover span{
-    transform: translateX(5px);
-}
-
-.subMenuLinkHeader:hover p{
-    font-weight: 600;
-}
-
-@media(max-width: 920px){
-    .header {
-        min-width: 0vh;
-    }
-    .NavHeader {
-        padding: 15px 5%;
-    }
-    .NavMenuLogoHeader{
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-    .logoHeader {
-        max-width: 190px;
-    }
-    .imgPerfilHeader {
-        margin-left: 0px;
-    }
-    .NavHeader ul li {
-        margin: 5px 15px;
-        font-size: 14px;
-    }
-    .subMenuWrap {
-        right: 5%;
-        width: 300px;
-    }
-    .userInfoHeader img {
-        width: 45px;
-    }
-    .subMenuHeader hr {
-        margin: 10px 0 10px;
-    }
-    .subMenuLinkHeader {
-        margin: 10px 0;
-    }
-    .subMenuLinkHeader p {
-        font-size: 14px;
-    }
-    .subMenuLinkHeader img{
-        width: 35px;
-        padding: 5px;
-        margin-right: 10px;
-    }
-}
-
-@media(max-width: 540px){
-    .header {
-        min-width: 0vh;
-    }
-    .NavHeader {
-        padding: 15px 5%;
-    }
-    .NavMenuLogoHeader{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-    }
-    .logoHeader {
-        max-width: 150px;
-    }
-    .imgPerfilHeader {
-        margin-left: 0px;
-    }
-    .NavHeader ul li {
-        margin: 5px 10px;
-        font-size: 13px;
-    }
-    .subMenuWrap {
-        right: 5%;
-        width: 280px;
-    }
-    .userInfoHeader img {
-        width: 40px;
-    }
-    .subMenuHeader hr {
-        margin: 10px 0 10px;
-    }
-    .subMenuLinkHeader {
-        margin: 10px 0;
-    }
-    .subMenuLinkHeader p {
-        font-size: 13px;
-    }
-    .subMenuLinkHeader img{
-        width: 30px;
-        padding: 5px;
-        margin-right: 9px;
-    }
+  }
+  .subMenuHeader hr {
+    margin: 10px 0 10px;
+  }
+  .subMenuLinkHeader {
+    margin: 10px 0;
+  }
+  .subMenuLinkHeader p {
+    font-size: 13px;
+  }
+  .subMenuLinkHeader img {
+    width: 30px;
+    padding: 5px;
+    margin-right: 9px;
+  }
 }
