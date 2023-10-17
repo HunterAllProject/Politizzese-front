@@ -62,13 +62,13 @@ export const Navbar = () => {
                         </div>
                         <hr />
 
-                        <Link to="#" className="subMenuLinkHeader">
+                        <Link to="/extrato" className="subMenuLinkHeader">
                             <img src={extratoIMG} />
                             <p>Extrato</p>
                             <span>{">"}</span>
                         </Link>
 
-                        <Link to="#" className="subMenuLinkHeader">
+                        <Link to="/credito" className="subMenuLinkHeader">
                             <img src={creditoIMG} />
                             <p>Créditos</p>
                             <span>{">"}</span>
@@ -86,7 +86,7 @@ export const Navbar = () => {
                             <span>{">"}</span>
                         </Link>
 
-                        <Link to="#" className="subMenuLinkHeader">
+                        <Link to="/login" className="subMenuLinkHeader">
                             <img src={sairIMG} />
                             <p>Sair</p>
                             <span>{">"}</span>
