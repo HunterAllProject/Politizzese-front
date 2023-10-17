@@ -10,6 +10,8 @@ import { Assinaturas } from "./pages/Assinaturas/Assinaturas.jsx";
 import { Extrato } from "./pages/Extrato/Extrato.jsx";
 import { Credito } from "./pages/Creditos/Credito.tsx";
 import { RequireAuth } from './context/auth/RequireAuth'
+import { CadastrarServico } from "./pages/CadastrarServico/CadastrarServico.jsx";
+import { CadastrarServicoConcluido } from "./pages/CadastrarServico/CadastrarServicoConcluido.jsx";
 
 export const App = () => {
     return (
@@ -26,6 +28,8 @@ export const App = () => {
                     <Route path="/assinaturas" element={<RequireAuth><Assinaturas /></RequireAuth>} />
                     <Route path="/extrato" element={<RequireAuth><Extrato /></RequireAuth>} />
                     <Route path="/credito" element={<RequireAuth><Credito /></RequireAuth>} />
+                    <Route path="/cadastrarservico" element={<RequireAuth><CadastrarServico /></RequireAuth>} />
+                    <Route path="/cadastrarservicoconcluido" element={<CadastrarServicoConcluido />} />
                 </Routes>
             </Router>
         </>
