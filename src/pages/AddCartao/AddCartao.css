@@ -1,6 +1,20 @@
-.butaoAddCartao {
+.containerAddCartao{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.mainAddCartao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0;
+}
+
+.botaoAddCartao {
+    display: flex;
+   flex-direction: row;
     align-items: center;
     justify-content: flex-end;
     gap: 10px;
@@ -8,7 +22,7 @@
     margin-bottom: 40%;
 }
 
-.butaoAddCartao a {
+.botaoAddCartao a {
     text-decoration: none;
     color: #333232; 
     cursor: pointer;
@@ -16,20 +30,20 @@
     padding: 10px;
 }
 
-.butaoAddCartao a:hover {
+.botaoAddCartao a:hover {
     color: #5a2f8b;
 }
 
-.butaoAddCartao button{
+.botaoAddCartao button{
     background-color:#5a2f8b;
     transition: 0.1s;
 }
 
-.butaoAddCartao button:hover{
+.botaoAddCartao button:hover{
     background-color: #9850EB;
 }
 
-.butaoAddCartao button:active{
+.botaoAddCartao button:active{
     background-color: #13b731;
 }
 

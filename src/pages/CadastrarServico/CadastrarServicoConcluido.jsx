@@ -8,11 +8,11 @@ import "./CadastrarServicoConcluido.css";
 
 export const CadastrarServicoConcluido = () => {
   return (
-    <div>
+    <div className="containerCadastrarServicoConcluidoBudy">
       <Navbar />
-      <div className="tituloAGlobal">
+      <div className="tituloGlobal">
         <h1>Cadastrar Serviços</h1>
-        <div className="barraAGlobal"></div>
+        <div className="barraGlobal"></div>
       </div>
 
       <div className="containerCadastrarServicoConcluido">

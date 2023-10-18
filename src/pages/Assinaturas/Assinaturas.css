@@ -1,6 +1,15 @@
+.containerBudyAssinatura{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .assinaturasContainer {
- display: flex;
- flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1 0;
 }
 
 .container_ass {

@@ -9,14 +9,15 @@ import "./NovosServicos.css";
 
 export const NovosServicos = () => {
   return (
-    <>
+    <div className="NovosServicosContainerBudy">
       <Navbar />
-      <div className="NovosServicosContainer">
-        <div className="tituloGlobal">
-          <h1>Serviços</h1>
-          <div className="barraGlobal"> </div>
-        </div>
 
+      <div className="tituloGlobal">
+        <h1>Serviços</h1>
+        <div className="barraGlobal"> </div>
+      </div>
+
+      <div className="NovosServicosContainer">
         <div className="textoCard">
           <div className="textoNovosServicos">
             <p>
@@ -102,6 +103,6 @@ export const NovosServicos = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };

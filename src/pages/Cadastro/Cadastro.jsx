@@ -43,9 +43,6 @@ export const Cadastro = () => {
             <NavbarLogin />
             <div className="sectionCadastro">
                 <div className="Cadastro">
-                    {/* <div className="imgFormCadastro">
-                    <img src={ImgDesignCadastro} alt="" />
-                </div> */}
                     <div className="LogoInputCadastro">
                         <div className="ImgLogoCadastro">
                             <img src={logoIMGCadastro} alt="logo do site" />
