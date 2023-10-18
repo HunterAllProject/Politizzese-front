@@ -8,7 +8,7 @@ import { ListarCartao } from "./pages/ListarCartao/ListarCartao.tsx";
 import { NovosServicos } from "./pages/NovosServicos/NovosServicos.jsx";
 import { Assinaturas } from "./pages/Assinaturas/Assinaturas.jsx";
 import { Extrato } from "./pages/Extrato/Extrato.jsx";
-import { Credito } from "./pages/Creditos/Credito.jsx";
+import { Credito } from "./pages/Creditos/Credito.tsx";
 import { RequireAuth } from './context/auth/RequireAuth'
 import { CadastrarServico } from "./pages/CadastrarServico/CadastrarServico.jsx";
 import { CadastrarServicoConcluido } from "./pages/CadastrarServico/CadastrarServicoConcluido.jsx";

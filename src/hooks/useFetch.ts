@@ -7,7 +7,6 @@ const api = axios.create({
 
 export function useFetch<T = unknown>(url: string) {
     const [data, setData] = useState<T | null>(null)
-
     useEffect(() => {
         api.get(url)
             .then(response => {
@@ -17,9 +16,25 @@ export function useFetch<T = unknown>(url: string) {
     return { data }
 }
 
+
+export function useFetchPost(url: string, ) {
+
+    useEffect(() => {
+        api.post(url, {
+
+        })
+            .then(response => {
+            })
+            .catch((error ) => console.log(error));
+    }, [])
+}
+
+
 export const useApi = () => ({
-    validateToken: async (token: string) => {
-        const response = await api.post('/Usuario/validade', { token });
+
+    validateToken: async (token: number) => {       
+        const response = await api.post('Usuario/ValidaToken', { token });
+        console.log(response)
         return response.data;
 
     },

@@ -14,6 +14,12 @@ export const Cadastro = () => {
         senha: "",
     });
 
+
+    const cadastrar = async () => {
+       console.log(formData)
+    }
+
+
     const handleFormCadastro = (event, name) => {
         setFormData({
             ...formData,
@@ -96,7 +102,7 @@ export const Cadastro = () => {
                                 </div>
                             </div>
 
-                            <button type="submit">Criar Conta</button>
+                            <button onClick={cadastrar} type="submit">Criar Conta</button>
                         </form>
                         <p>
                             Já é cadastrado?

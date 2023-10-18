@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import deleteIMG from "../../assets/delete.svg";
 import editarIMG from "../../assets/editar.svg";
 import cartaoIMG from "../../assets/cartao.svg";
@@ -7,21 +7,26 @@ import { Navbar } from "../../components/Navbar/Navbar.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
 import "./ListarCartao.css";
 import { useFetch } from "../../hooks/useFetch";
+import { Cartao } from "../../types/Cartao";
+import { AuthContext } from "../../context/auth/AuthContext";
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 
-type Cartoes = {
-    id: number,
-    idUsuario: number,
-    nome: string,
-    numero: string,
-    mes: string,
-    ano: string,
-    codigo: string
-}
 
-export const ListarCartao = ({}) => {
-    const {data} = useFetch<Cartoes[]>('https://politizzese-back.azurewebsites.net/1');
 
+export const ListarCartao = ({ }) => {
+    const navigate = useNavigate();
+    const auth = useContext(AuthContext);
+    const credito = auth.credito;
+    if (credito == 0) {
+        navigate("../credito");
+    }
+    const { data } = useFetch<Cartao[]>(String(auth.usuario!.id));
     function handleRemoverCartao(id: number): void {
+        console.log(id);
+    }
+
+    function selecionar(id: number): void {
         console.log(id);
     }
 
@@ -30,15 +35,19 @@ export const ListarCartao = ({}) => {
             <Navbar />
             <div className="ConteinerListarCartao">
                 <div className="tituloGlobal">
-                    <h1>Listar Cartções</h1>
+                    <h1>Listar Cartões</h1>
                     <div className="barraGlobal"> </div>
                 </div>
 
                 <div className="DescricaoListarCartao">
                     <ul className="listarCartaoUl">
                         {data?.map((cartao, index) => (
-                            <li key={index} className="listarCartaoLi">
-                                <div  className="containerDescListarCartao1">
+
+                            <li key={index} onClick={()=>
+                                selecionar(cartao.id)
+                                
+                            } className="listarCartaoLi">
+                                <div className="containerDescListarCartao1">
                                     <img src={cartaoIMG} alt="" />
                                 </div>
 
@@ -72,7 +81,7 @@ export const ListarCartao = ({}) => {
                                                 src={deleteIMG}
                                                 alt="Imagem da lixeira"
                                                 onClick={() =>
-                                                    handleRemoverCartao(index)
+                                                    handleRemoverCartao(cartao.id)
                                                 }
                                             />
                                         </div>
