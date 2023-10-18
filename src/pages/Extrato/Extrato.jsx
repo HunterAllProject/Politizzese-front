@@ -5,7 +5,7 @@ import "./Extrato.css";
 
 export const Extrato = () => {
     return (
-        <div>
+        <div className="containerExtratoBudy">
             <Navbar />
             <div className="tituloGlobal">
                 <h1>Extrato</h1>

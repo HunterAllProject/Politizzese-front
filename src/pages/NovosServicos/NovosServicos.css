@@ -1,3 +1,17 @@
+.NovosServicosContainerBudy{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.NovosServicosContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0;
+}
+
 .textoCard {
     display: flex;
     flex-direction: column;

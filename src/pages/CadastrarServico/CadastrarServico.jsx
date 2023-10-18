@@ -7,7 +7,7 @@ import { Upload } from "../../components/Upload/Upload.jsx";
 
 export const CadastrarServico = () => {
   return (
-    <div>
+    <div className="containerCadastrarServicoBudy">
       <Navbar />
       <div className="tituloGlobal">
         <h1>Cadastrar Serviços</h1>
