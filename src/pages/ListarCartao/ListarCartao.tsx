@@ -34,9 +34,9 @@ export const ListarCartao = ({ }) => {
         <>
             <Navbar />
             <div className="ConteinerListarCartao">
-                <div className="tituloListarCartao">
+                <div className="tituloGlobal">
                     <h1>Listar Cartões</h1>
-                    <div className="barraListarCartao"> </div>
+                    <div className="barraGlobal"> </div>
                 </div>
 
                 <div className="DescricaoListarCartao">

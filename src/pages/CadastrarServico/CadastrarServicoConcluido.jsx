@@ -4,16 +4,15 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { Navbar } from "../../components/Navbar/Navbar";
 import { Footer } from "../../components/Footer/Footer";
-import { Upload } from "../../components/Upload/Upload.jsx";
 import "./CadastrarServicoConcluido.css";
 
 export const CadastrarServicoConcluido = () => {
   return (
     <div>
       <Navbar />
-      <div className="tituloAssinaturas">
+      <div className="tituloAGlobal">
         <h1>Cadastrar Serviços</h1>
-        <div className="barraAssinaturas"></div>
+        <div className="barraAGlobal"></div>
       </div>
 
       <div className="containerCadastrarServicoConcluido">
@@ -24,8 +23,8 @@ export const CadastrarServicoConcluido = () => {
 
           <div className="descricaoCadastrarServicoConcluido">
             <p>
-              Descreva brevemente o serviço que você deseja, 
-              para que nossos editores possam realizar o seu serviço.
+              Descreva brevemente o serviço que você deseja, para que nossos
+              editores possam realizar o seu serviço.
             </p>
             <Box
               component="form"
@@ -68,7 +67,7 @@ export const CadastrarServicoConcluido = () => {
                 />
               </div>
             </Box>
-          </div>  
+          </div>
 
           <div className="botaoCadastrarServicob">
             <Link to="/listarcartao">

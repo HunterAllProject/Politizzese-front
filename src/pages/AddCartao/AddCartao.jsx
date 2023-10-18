@@ -50,6 +50,10 @@ export const AddCartao = () => {
     return (
         <>
             <Navbar />
+            <div className="tituloGlobal">
+                <h1>Adicionar Cartão</h1>
+                <div className="barraGlobal"> </div>
+            </div>
             <ThemeProvider theme={defaultTheme}>
                 <Container component="main" maxWidth="xs">
                     <Box
