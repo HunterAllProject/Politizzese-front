@@ -6,6 +6,8 @@ import { useApi } from "../../hooks/useFetch";
 export const AuthProvider = ({ children }: { children: JSX.Element }) => {
 
     const [usuario, setUsuario] = useState<Usuario | null>(null);
+
+    const [credito, setCredito] = useState<number | 0>(0);
     const api = useApi();
 
     useEffect(() => {
@@ -20,6 +22,11 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
         }
         validateToken();
     }, [api]);
+
+    const guardarCredito = (id: number) => {
+        console.log(id)
+        setCredito(id);
+    }
 
     const login = async (email: string, senha: string) => {
 
@@ -43,7 +50,7 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
     }
 
     return (
-        <AuthContext.Provider value={{ usuario, login, logout }}>
+        <AuthContext.Provider value={{ usuario, credito, login, logout, guardarCredito }}>
             {children}
         </AuthContext.Provider>
     )

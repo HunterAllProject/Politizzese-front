@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import deleteIMG from "../../assets/delete.svg";
 import editarIMG from "../../assets/editar.svg";
 import cartaoIMG from "../../assets/cartao.svg";
@@ -10,15 +10,23 @@ import { useFetch } from "../../hooks/useFetch";
 import { Cartao } from "../../types/Cartao";
 import { AuthContext } from "../../context/auth/AuthContext";
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 
 export const ListarCartao = ({ }) => {
+    const navigate = useNavigate();
     const auth = useContext(AuthContext);
-    
+    const credito = auth.credito;
+    if (credito == 0) {
+        navigate("../credito");
+    }
     const { data } = useFetch<Cartao[]>(String(auth.usuario!.id));
-
     function handleRemoverCartao(id: number): void {
+        console.log(id);
+    }
+
+    function selecionar(id: number): void {
         console.log(id);
     }
 
@@ -27,14 +35,18 @@ export const ListarCartao = ({ }) => {
             <Navbar />
             <div className="ConteinerListarCartao">
                 <div className="tituloListarCartao">
-                    <h1>Listar Cartções</h1>
+                    <h1>Listar Cartões</h1>
                     <div className="barraListarCartao"> </div>
                 </div>
 
                 <div className="DescricaoListarCartao">
                     <ul className="listarCartaoUl">
                         {data?.map((cartao, index) => (
-                            <li key={index} className="listarCartaoLi">
+
+                            <li key={index} onClick={()=>
+                                selecionar(cartao.id)
+                                
+                            } className="listarCartaoLi">
                                 <div className="containerDescListarCartao1">
                                     <img src={cartaoIMG} alt="" />
                                 </div>

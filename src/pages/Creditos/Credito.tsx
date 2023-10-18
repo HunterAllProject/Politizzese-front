@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Credito.css";
 import { Navbar } from "../../components/Navbar/Navbar";
 import { Footer } from "../../components/Footer/Footer";
 import cifraoIMG from "../../assets/cifrao.svg";
 import { Creditos } from "../../types/Creditos"
 import { useFetch } from "../../hooks/useFetch";
+import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../context/auth/AuthContext";
 
 export const Credito = () => {
     const { data } = useFetch<Creditos[]>('Credito');
+    const navigate = useNavigate();
+    const auth = useContext(AuthContext);
+
+    function handleComprar(id: number): void {
+        auth.guardarCredito(id);
+        navigate('../ListarCartao')
+    }
 
     return (
         <div>
@@ -41,7 +51,10 @@ export const Credito = () => {
                             </div>
 
                             <div className="creditoComprar">
-                                <button type="submit">Comprar</button>
+                                <button onClick={() =>
+                                    handleComprar(c.id)
+                                }
+                                    type="submit">Comprar</button>
                             </div>
                         </li>
                     ))};
