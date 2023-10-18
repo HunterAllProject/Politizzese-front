@@ -16,7 +16,6 @@ export const Home = ({ }) => {
       <div className="cardCreditoHome">
         <div className="containerCreditoHome">
           <div className="creditosDisponiveisHome">
-            {/* Lógica de créditos */}
             <h1 className="valorCreditosHome">{data}</h1>
             <p className="disponivelHome">Creditos Disponíveis</p>
           </div>
@@ -39,7 +38,6 @@ export const Home = ({ }) => {
           <button type="submit">Adicionar Pedidos</button>
         </Link>
       </div>
-
       <Footer />
     </ div>
   );
