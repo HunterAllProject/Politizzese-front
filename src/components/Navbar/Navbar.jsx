@@ -7,6 +7,7 @@ import creditoIMG from "../../assets/credito.svg";
 import configIMG from "../../assets/config.svg";
 import suporteIMG from "../../assets/suporte.svg";
 import sairIMG from "../../assets/sair.svg";
+import cartaoCreditoIMG from "../../assets/cartaoCredito.svg";
 import "./Navbar.css";
 
 export const Navbar = () => {
@@ -69,6 +70,12 @@ export const Navbar = () => {
             <Link to="/credito" className="subMenuLinkHeader">
               <img src={creditoIMG} />
               <p>Créditos</p>
+              <span>{">"}</span>
+            </Link>
+
+            <Link to="/listarcartao" className="subMenuLinkHeader">
+              <img src={cartaoCreditoIMG} />
+              <p>Cartão de Crédito</p>
               <span>{">"}</span>
             </Link>
 
