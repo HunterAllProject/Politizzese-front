@@ -57,7 +57,7 @@ export const Credito = () => {
                                     type="submit">Comprar</button>
                             </div>
                         </li>
-                    ))};
+                    ))}
 
                 </ul>
 

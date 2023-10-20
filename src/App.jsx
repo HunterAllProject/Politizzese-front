@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home/Home.jsx";
 import { Login } from "./pages/Login/Login.jsx";
-import { Cadastro } from "./pages/Cadastro/Cadastro.jsx";
+import { Cadastro } from "./pages/Cadastro/Cadastro.tsx";
 import { RecSenha } from "./pages/RecSenha/RecSenha.jsx";
 import { AddCartao } from "./pages/AddCartao/AddCartao.jsx";
 import { ListarCartao } from "./pages/ListarCartao/ListarCartao.tsx";
