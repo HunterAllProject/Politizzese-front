@@ -8,7 +8,7 @@ export const Upload = () => {
       <div className="fieldgroup">
         <input type="file" name="file[]" id="file" className="filefield" />
         <label for="file" className="filelabel background">
-          <span>Envie seu arquivo</span>
+          <span>Upload do arquivo</span>
           <img src={uploadIMG}/>
         </label>
       </div>
