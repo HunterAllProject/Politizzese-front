@@ -41,7 +41,6 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
     }
     const cadastro = async (usuario: any) => {
         await api.cadastro(usuario);
-        setUsuario(null);
     }
 
     const logout = async () => {
