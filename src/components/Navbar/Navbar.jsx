@@ -9,6 +9,8 @@ import suporteIMG from "../../assets/suporte.svg";
 import cartaodecreditoIMG from "../../assets/cartaodecredito.svg";
 
 import sairIMG from "../../assets/sair.svg";
+import cartaoCreditoIMG from "../../assets/cartaoCredito.svg";
+import iconePerfilIMG from "../../assets/iconePerfil.svg";
 import "./Navbar.css";
 
 export const Navbar = () => {
@@ -62,9 +64,9 @@ export const Navbar = () => {
             </div>
             <hr />
 
-            <Link to="/extrato" className="subMenuLinkHeader">
-              <img src={extratoIMG} />
-              <p>Extrato</p>
+            <Link to="#" className="subMenuLinkHeader">
+              <img src={iconePerfilIMG} />
+              <p>Perfil</p>
               <span>{">"}</span>
             </Link>
 
@@ -80,13 +82,25 @@ export const Navbar = () => {
               <span>{">"}</span>
             </Link>
 
-            <Link to="#" className="subMenuLinkHeader">
+            <Link to="/extrato" className="subMenuLinkHeader">
+              <img src={extratoIMG} />
+              <p>Extrato</p>
+              <span>{">"}</span>
+            </Link>
+
+            <Link to="/listarcartao" className="subMenuLinkHeader">
+              <img src={cartaoCreditoIMG} />
+              <p>Cartão de Crédito</p>
+              <span>{">"}</span>
+            </Link>
+
+            <Link to="/config" className="subMenuLinkHeader">
               <img src={configIMG} />
               <p>Configurações & Privacidade</p>
               <span>{">"}</span>
             </Link>
 
-            <Link to="#" className="subMenuLinkHeader">
+            <Link to="/suporte" className="subMenuLinkHeader">
               <img src={suporteIMG} />
               <p>Ajuda & Suporte</p>
               <span>{">"}</span>
