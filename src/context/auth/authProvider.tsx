@@ -39,6 +39,9 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
         }
         return false;
     }
+    const cadastro = async (usuario: any) => {
+        await api.cadastro(usuario);
+    }
 
     const logout = async () => {
         await api.logout();
@@ -50,7 +53,7 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
     }
 
     return (
-        <AuthContext.Provider value={{ usuario, credito, login, logout, guardarCredito }}>
+        <AuthContext.Provider value={{ usuario, credito, login, logout, guardarCredito, cadastro }}>
             {children}
         </AuthContext.Provider>
     )
