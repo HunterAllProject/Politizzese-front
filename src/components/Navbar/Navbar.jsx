@@ -6,6 +6,8 @@ import extratoIMG from "../../assets/extrato.svg";
 import creditoIMG from "../../assets/credito.svg";
 import configIMG from "../../assets/config.svg";
 import suporteIMG from "../../assets/suporte.svg";
+import cartaodecreditoIMG from "../../assets/cartaodecredito.svg";
+
 import sairIMG from "../../assets/sair.svg";
 import "./Navbar.css";
 
@@ -72,6 +74,12 @@ export const Navbar = () => {
               <span>{">"}</span>
             </Link>
 
+            <Link to="/listarcartao" className="subMenuLinkHeader">
+              <img src= {cartaodecreditoIMG}/>
+              <p>Cartão de Crédito</p>
+              <span>{">"}</span>
+            </Link>
+
             <Link to="#" className="subMenuLinkHeader">
               <img src={configIMG} />
               <p>Configurações & Privacidade</p>
@@ -89,6 +97,7 @@ export const Navbar = () => {
               <p>Sair</p>
               <span>{">"}</span>
             </Link>
+            
           </div>
         </div>
       </div>
