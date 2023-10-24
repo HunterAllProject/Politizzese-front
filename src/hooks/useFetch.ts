@@ -16,18 +16,6 @@ export function useFetch<T = unknown>(url: string) {
     return { data }
 }
 
-export function useFetchPost(url: string,) {
-
-    useEffect(() => {
-        api.post(url, {
-
-        })
-            .then(response => {
-            })
-            .catch((error) => console.log(error));
-    }, [])
-}
-
 export const useApi = () => ({
 
     validateToken: async (token: number) => {
@@ -53,6 +41,17 @@ export const useApi = () => ({
             nomeCompleto: usuario.nomeCompleto,
             email: usuario.email,
             senha: usuario.senha
+         });
+        return response.data;
+    },
+
+    cadastrarCartao: async(cartao: any, idUSuario: number) =>{
+        const response = await api.post('CartaoCredito', { 
+            numero: cartao.number,
+            expiracao: cartao.expiry,
+            codigo: cartao.cvc,
+            nome: cartao.name,
+            idUsuario: idUSuario
          });
         return response.data;
     }

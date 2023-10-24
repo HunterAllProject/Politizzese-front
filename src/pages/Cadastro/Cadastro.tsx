@@ -8,7 +8,6 @@ import { NavbarLogin } from "../../components/Navbar/NavbarLogin.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
 import { useContext } from "react";
 import { AuthContext } from "../../context/auth/AuthContext";
-import { Usuario } from "../../types/Usuario";
 import { useNavigate } from "react-router-dom";
 
 export const Cadastro = () => {
@@ -32,7 +31,7 @@ export const Cadastro = () => {
     const handleForm = async (event) => {
         try {
             event.preventDefault();
-            await auth.cadastro(formUsuario)
+            auth.cadastro(formUsuario)
             navigate('../login')
         } catch (error) {
             console.log(error);
