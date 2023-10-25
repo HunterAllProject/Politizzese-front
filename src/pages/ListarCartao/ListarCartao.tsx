@@ -62,7 +62,7 @@ export const ListarCartao = ({ }) => {
                                         </div>
 
                                         <div className="listar-expiry">
-                                            <p>Validade: {cartao.mes}/{cartao.ano}</p>
+                                            <p>Validade: {cartao.expiracao}</p>
                                         </div>
                                     </div>
 

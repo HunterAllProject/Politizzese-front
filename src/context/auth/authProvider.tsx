@@ -39,10 +39,7 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
         }
         return false;
     }
-    const cadastro = async (usuario: any) => {
-        await api.cadastro(usuario);
-    }
-
+    
     const logout = async () => {
         await api.logout();
         setUsuario(null);
@@ -52,8 +49,24 @@ export const AuthProvider = ({ children }: { children: JSX.Element }) => {
         localStorage.setItem('authToken', token)
     }
 
+    const cadastro = async (usuario: any) => {
+        await api.cadastro(usuario);
+    }    
+
+    const cadastrarCartao = async(cartao: any) =>{
+        await api.cadastrarCartao(cartao, usuario!.id);
+    }
+
     return (
-        <AuthContext.Provider value={{ usuario, credito, login, logout, guardarCredito, cadastro }}>
+        <AuthContext.Provider value={{
+         usuario,
+         credito,
+         login,
+         logout,
+         guardarCredito,
+         cadastro,
+         cadastrarCartao
+         }}>
             {children}
         </AuthContext.Provider>
     )

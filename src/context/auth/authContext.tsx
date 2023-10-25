@@ -7,7 +7,8 @@ export type AuthContextType = {
     login: (email: string, senha: string) => Promise<boolean>;
     logout: () => void;
     guardarCredito: (id: number) => void;
-    cadastro: (usaurio: any) => void;
+    cadastro: (usuario: any) => void;
+    cadastrarCartao: (cartao: any) => void;
 }
 
 export const AuthContext = createContext<AuthContextType>(null!);

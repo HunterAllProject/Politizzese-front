@@ -13,7 +13,6 @@ import { RequireAuth } from './context/auth/RequireAuth'
 import { CadastrarServico } from "./pages/CadastrarServico/CadastrarServico.jsx";
 import { CadastrarServicoConcluido } from "./pages/CadastrarServico/CadastrarServicoConcluido.jsx";
 import { Configuracao } from "./pages/Configuracao/Configuracao.jsx";
-import { Suporte } from "./pages/Suporte/Suporte.jsx";
 
 export const App = () => {
     return (
@@ -33,7 +32,6 @@ export const App = () => {
                     <Route path="/cadastrarservico" element={<RequireAuth><CadastrarServico /></RequireAuth>} />
                     <Route path="/cadastrarservicoconcluido" element={<CadastrarServicoConcluido />} />
                     <Route path="/config" element={<Configuracao />} />
-                    <Route path="/suporte" element={<Suporte />} />
                 </Routes>
             </Router>
         </>
