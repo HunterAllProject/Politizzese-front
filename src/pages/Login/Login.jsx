@@ -8,6 +8,7 @@ import { Footer } from "../../components/Footer/Footer.jsx";
 import { AuthContext } from "../../context/auth/AuthContext";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { Progresso } from "../../components/Progresso/Progresso.jsx"
 
 export const Login = () => {
     const auth = useContext(AuthContext);
@@ -15,14 +16,24 @@ export const Login = () => {
     const [email, setEmail] = useState("");
     const navigate = useNavigate();
 
+    const [showLoading, setShowLoading] = useState(false);
+
+    const handleSubimit = (e) => {
+        e.preventDefault();
+    }
+
     const login = async () => {
+
         if (email && senha) {
+            setShowLoading(true);
             const logado = await auth.login(email, senha);
             if (logado) {
                 navigate('/');
+                setShowLoading(true);
             }
             else {
                 alert("Usuario não existe")
+                setShowLoading(false);
             }
         }
     }
@@ -38,7 +49,7 @@ export const Login = () => {
                             <img src={logoIMGLogin} alt="logo do site" />
                         </div>
 
-                        <div className="formularioLogin">
+                        <form className="formularioLogin" onSubmit={handleSubimit}>
                             <div className="inputsLogin">
                                 <TextField
                                     required
@@ -74,15 +85,16 @@ export const Login = () => {
                                     <p>Esqueceu a sua senha?</p>
                                 </Link>
                             </div>
-                        </div>
 
-                        <button onClick={login} type="submit">Entrar</button>
+                            <button onClick={login} type="submit">Entrar</button>
+                        </form>
 
                         <p>
                             Ainda não tem conta?
                             <Link to="/cadastro"> Criar Conta</Link>
                         </p>
                     </div>
+                    { showLoading && <Progresso /> }
                 </div>
             </div>
             <Footer />
