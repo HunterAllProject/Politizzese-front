@@ -3,7 +3,6 @@ export type Cartao = {
     idUsuario: number,
     nome: string,
     numero: string,
-    mes: string,
-    ano: string,
+    expiracao: string,
     codigo: string
 }
