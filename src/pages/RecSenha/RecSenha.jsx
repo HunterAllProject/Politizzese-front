@@ -15,9 +15,6 @@ export const RecSenha = () => {
          <NavbarLogin />
             <div className="sectionRecSenha">
                 <div className="RecSenha">
-                    {/* <div className="imgFormRecSenha">
-                    <img src={ImgDesignRecSenha} alt="" />
-                </div> */}
                     <div className="LogoInputRecSenha">
                         <div className="ImgLogoRecSenha">
                             <img src={logoIMGRecSenha} alt="logo do site" />

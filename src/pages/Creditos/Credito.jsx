@@ -9,7 +9,7 @@ export const Credito = () => {
         <div className="creditoContainerBudy">
             <Navbar />
             <div className="tituloGlobal">
-                <h1>Créditos</h1>
+                <h1>CRÉDITOS</h1>
                 <div className="barraGlobal"> </div>
             </div>
 
@@ -33,9 +33,11 @@ export const Credito = () => {
                             </div>
                         </div>
 
+                        <Link to="/listarcartao">
                         <div className="creditoComprar">
                             <button type="submit">Comprar</button>
                         </div>
+                        </Link>
                     </li>
 
                     <li className="creditoLi">
@@ -56,9 +58,11 @@ export const Credito = () => {
                             </div>
                         </div>
 
+                        <Link to="/listarcartao">
                         <div className="creditoComprar">
                             <button type="submit">Comprar</button>
                         </div>
+                        </Link>
                     </li>
 
                     <li className="creditoLi">
@@ -79,9 +83,11 @@ export const Credito = () => {
                             </div>
                         </div>
 
+                        <Link to="/listarcartao">
                         <div className="creditoComprar">
                             <button type="submit">Comprar</button>
                         </div>
+                        </Link>
                     </li>
 
                     <li className="creditoLi">
@@ -102,9 +108,11 @@ export const Credito = () => {
                             </div>
                         </div>
 
+                        <Link to="/listarcartao">
                         <div className="creditoComprar">
                             <button type="submit">Comprar</button>
                         </div>
+                        </Link>
                     </li>
                 </ul>
 

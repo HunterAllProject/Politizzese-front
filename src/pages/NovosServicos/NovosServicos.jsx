@@ -13,7 +13,7 @@ export const NovosServicos = () => {
       <Navbar />
 
       <div className="tituloGlobal">
-        <h1>Serviços</h1>
+        <h1>SERVIÇOS</h1>
         <div className="barraGlobal"> </div>
       </div>
 

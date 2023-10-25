@@ -33,7 +33,7 @@ export const Navbar = () => {
 
           <ul className="navListHeader">
             <li>
-              <Link to="/">pedidos</Link>
+              <Link to="/">Pedidos</Link>
             </li>
             <li>
               <Link to="/novosservicos">Serviços</Link>

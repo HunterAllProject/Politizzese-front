@@ -11,7 +11,7 @@ export const CadastrarServicoConcluido = () => {
     <div className="containerCadastrarServicoConcluidoBudy">
       <Navbar />
       <div className="tituloGlobal">
-        <h1>Cadastrar Serviços</h1>
+        <h1>CADASTRAR SERVIÇOS</h1>
         <div className="barraGlobal"></div>
       </div>
 

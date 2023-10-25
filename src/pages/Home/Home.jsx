@@ -11,12 +11,11 @@ export const Home = () => {
       <div className="cardCreditoHome">
         <div className="containerCreditoHome">
           <div className="creditosDisponiveisHome">
-            {/* Lógica de créditos */}
             <h1 className="valorCreditosHome">0</h1>
             <p className="disponivelHome">Creditos Disponíveis</p>
           </div>
 
-          <Link to="/comprarcredito">
+          <Link to="/credito">
             <div className="comprarCreditosHome">
               <p>Comprar Créditos</p>
             </div>
@@ -25,7 +24,7 @@ export const Home = () => {
       </div>
 
       <div className="tituloGlobal">
-        <h1>Pedidos</h1>
+        <h1>PEDIDOS</h1>
         <div className="barraGlobal"> </div>
       </div>
 

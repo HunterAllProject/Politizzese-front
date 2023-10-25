@@ -8,7 +8,7 @@ export const Extrato = () => {
         <div className="containerExtratoBudy">
             <Navbar />
             <div className="tituloGlobal">
-                <h1>Extrato</h1>
+                <h1>EXTRATO</h1>
                 <div className="barraGlobal"> </div>
             </div>
 

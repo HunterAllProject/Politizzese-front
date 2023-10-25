@@ -13,6 +13,8 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Navbar } from "../../components/Navbar/Navbar.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
+import { Progresso } from "../../components/Progresso/Progresso.jsx"
+
 
 const defaultTheme = createTheme();
 
@@ -25,6 +27,12 @@ export const AddCartao = () => {
     name: "",
     focus: "",
   });
+  const [showLoading, setShowLoading] = useState(false);
+
+    // evento de click do loading
+    const login = () => {
+      setShowLoading(true);
+    }
 
   const handleSubimit = (event) => {
     event.preventDefault();
@@ -35,6 +43,7 @@ export const AddCartao = () => {
 
     console.log("Cartão adicionado com sucesso", state);
     navigate("/listarcartao");
+    setShowLoading(false);
   };
 
   const handleInputChange = (evt) => {
@@ -47,12 +56,13 @@ export const AddCartao = () => {
     setState((prev) => ({ ...prev, focus: evt.target.name }));
   };
 
+
   return (
     <div className="containerAddCartao">
       <Navbar />
 
       <div className="tituloGlobal">
-        <h1>Adicionar Cartão</h1>
+        <h1>ADICIONAR CARTÃO</h1>
         <div className="barraGlobal"> </div>
       </div>
 
@@ -137,7 +147,6 @@ export const AddCartao = () => {
                     />
                   </Grid>
                 </Grid>
-
                 <div className="botaoAddCartao">
                   <Link to="/listarcartao">
                     <p>Cancelar</p>
@@ -145,6 +154,7 @@ export const AddCartao = () => {
 
                   <Grid item xs={10}>
                     <Button
+                      onClick={login}
                       type="submit"
                       fullWidth
                       variant="contained"
@@ -158,6 +168,7 @@ export const AddCartao = () => {
             </Box>
           </Container>
         </ThemeProvider>
+        { showLoading && <Progresso /> } 
       </div>
       <Footer />
     </div>
