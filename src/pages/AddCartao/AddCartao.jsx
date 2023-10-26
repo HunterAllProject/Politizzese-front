@@ -15,7 +15,6 @@ import { Navbar } from "../../components/Navbar/Navbar.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
 import { Progresso } from "../../components/Progresso/Progresso.jsx"
 
-
 const defaultTheme = createTheme();
 
 export const AddCartao = () => {
@@ -29,7 +28,6 @@ export const AddCartao = () => {
   });
   const [showLoading, setShowLoading] = useState(false);
 
-    // evento de click do loading
     const login = () => {
       setShowLoading(true);
     }
@@ -55,7 +53,6 @@ export const AddCartao = () => {
   const handleInputFocus = (evt) => {
     setState((prev) => ({ ...prev, focus: evt.target.name }));
   };
-
 
   return (
     <div className="containerAddCartao">

@@ -70,10 +70,6 @@
   padding: 20px;
 }
 
-.descricaoCadastrarServicoConcluido input {
-  height: 500px;
-}
-
 .cadastrarVervicoSubTituloConcluido {
   display: flex;
   flex-direction: column;
@@ -110,4 +106,14 @@
 
 .botaoCadastrarServicob button:active {
   background-color: #13b731;
+}
+
+.inputFormCadastrarServico div{
+  width: 660px;
+}
+
+@media(max-width: 720px){
+  .inputFormCadastrarServico div{
+    width: 340px;
+  }
 }
