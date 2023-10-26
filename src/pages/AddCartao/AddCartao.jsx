@@ -13,17 +13,22 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Navbar } from "../../components/Navbar/Navbar.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
-import { Progresso } from "../../components/Progresso/Progresso.jsx"
+import { Progresso } from "../../components/Progresso/Progresso.js
+import { useContext } from "react";
+import { AuthContext } from "../../context/auth/AuthContext";
 
 const defaultTheme = createTheme();
 
 export const AddCartao = () => {
+
+  const auth = useContext(AuthContext);
   const navigate = useNavigate();
   const [state, setState] = useState({
     number: "",
     expiry: "",
     cvc: "",
     name: "",
+    idUsuario: "",
     focus: "",
   });
   const [showLoading, setShowLoading] = useState(false);
@@ -34,12 +39,8 @@ export const AddCartao = () => {
 
   const handleSubimit = (event) => {
     event.preventDefault();
-
-    const storedCartao = JSON.parse(localStorage.getItem("cartoes")) || [];
-    storedCartao.push(state);
-    localStorage.setItem("cartoes", JSON.stringify(storedCartao));
-
-    console.log("Cartão adicionado com sucesso", state);
+    auth.cadastrarCartao(state);
+    
     navigate("/listarcartao");
     setShowLoading(false);
   };

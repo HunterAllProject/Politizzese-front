@@ -6,17 +6,24 @@ import logoIMGCadastro from "../../assets/politizzeseLogo.svg";
 import ImgDesignCadastro from "../../assets/cameraDesign.svg";
 import { NavbarLogin } from "../../components/Navbar/NavbarLogin.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
+import { useContext } from "react";
+import { AuthContext } from "../../context/auth/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 export const Cadastro = () => {
-    const [formData, setFormData] = useState({
-        name: "",
+    const [formUsuario, setFormUsuario] = useState({
+        nomeCompleto: "",
         email: "",
         senha: "",
     });
 
+    const auth = useContext(AuthContext);
+    const navigate = useNavigate();
+
+
     const handleFormCadastro = (event, name) => {
-        setFormData({
-            ...formData,
+        setFormUsuario({
+            ...formUsuario,
             [name]: event.target.value,
         });
     };
@@ -24,15 +31,8 @@ export const Cadastro = () => {
     const handleForm = async (event) => {
         try {
             event.preventDefault();
-            // Caminho da api
-            const response = await fetch(`/Usuario`, {
-                method: "POST",
-                body: JSON.stringify(formData),
-            });
-
-            const json = await response.json();
-            console.log(response.status);
-            console.Console(json);
+            auth.cadastro(formUsuario)
+            navigate('../login')
         } catch (error) {
             console.log(error);
         }
@@ -53,14 +53,14 @@ export const Cadastro = () => {
                                 <div className="inputsCadastro">
                                     <TextField
                                         required
-                                        type="name"
+                                        type="nomeCompleto"
                                         className="TextFieldCadastro"
                                         id="filled-basic"
-                                        label="Seu Name"
+                                        label="Nome completo"
                                         variant="filled"
-                                        value={formData.nome}
+                                        value={formUsuario.nomeCompleto}
                                         onChange={(e) => {
-                                            handleFormCadastro(e, "name");
+                                            handleFormCadastro(e, "nomeCompleto");
                                         }}
                                     />
                                 </div>
@@ -71,9 +71,9 @@ export const Cadastro = () => {
                                         type="email"
                                         className="TextFieldCadastro"
                                         id="filled-basic"
-                                        label="Seu Email"
+                                        label="E-mail"
                                         variant="filled"
-                                        value={formData.email}
+                                        value={formUsuario.email}
                                         onChange={(e) => {
                                             handleFormCadastro(e, "email");
                                         }}
@@ -86,9 +86,9 @@ export const Cadastro = () => {
                                         type="password"
                                         className="TextFieldCadastro"
                                         id="filled-basic"
-                                        label="Uma Senha"
+                                        label="Senha"
                                         variant="filled"
-                                        value={formData.senha}
+                                        value={formUsuario.senha}
                                         onChange={(e) => {
                                             handleFormCadastro(e, "senha");
                                         }}
