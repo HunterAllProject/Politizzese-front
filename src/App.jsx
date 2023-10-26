@@ -13,6 +13,7 @@ import { RequireAuth } from './context/auth/RequireAuth'
 import { CadastrarServico } from "./pages/CadastrarServico/CadastrarServico.jsx";
 import { CadastrarServicoConcluido } from "./pages/CadastrarServico/CadastrarServicoConcluido.jsx";
 import { Configuracao } from "./pages/Configuracao/Configuracao.jsx";
+import { TermosUso } from "./pages/TermosUso/TermosUso.jsx";
 
 export const App = () => {
     return (
@@ -22,16 +23,17 @@ export const App = () => {
                     <Route path="/login" element={<Login />} />
                     <Route path="/cadastro" element={<Cadastro />} />
                     <Route path="/recsenha" element={<RecSenha />} />
-                    <Route path="/" element={<RequireAuth> <Home /></RequireAuth>} />
-                    <Route path="/addcartao" element={ <AddCartao />} />
+                    <Route path="/" element={<RequireAuth><Home /></RequireAuth>} />
+                    <Route path="/addcartao" element={<RequireAuth> <AddCartao /></RequireAuth>} />
                     <Route path="/listarcartao" element={<RequireAuth> <ListarCartao /></RequireAuth>} />
                     <Route path="/novosservicos" element={<RequireAuth><NovosServicos /></RequireAuth>} />
                     <Route path="/assinaturas" element={<RequireAuth><Assinaturas /></RequireAuth>} />
                     <Route path="/extrato" element={<RequireAuth><Extrato /></RequireAuth>} />
                     <Route path="/credito" element={<RequireAuth><Credito /></RequireAuth>} />
                     <Route path="/cadastrarservico" element={<RequireAuth><CadastrarServico /></RequireAuth>} />
-                    <Route path="/cadastrarservicoconcluido" element={<CadastrarServicoConcluido />} />
-                    <Route path="/config" element={<Configuracao />} />
+                    <Route path="/cadastrarservicoconcluido" element={<RequireAuth><CadastrarServicoConcluido /></RequireAuth>} />
+                    <Route path="/config" element={<RequireAuth><Configuracao /></RequireAuth>} />
+                    <Route path="termouso" element={<TermosUso />} />
                 </Routes>
             </Router>
         </>
