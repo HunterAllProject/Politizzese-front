@@ -41,6 +41,7 @@
 
 .creditoLi {
     display: flex;
+    cursor: pointer;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -115,13 +116,21 @@
     justify-content: center;
     padding: 10px;
     background-color: #9850eb;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     cursor: pointer;
     color: #fff;
     font-family: Nunito;
     font-weight: bold;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.creditoComprar button:hover {
+    background-color: #5a2f8b;
+}
+
+.creditoComprar button:active {
+    background-color: #9850eb;
 }
 
 .creditoInformativo {

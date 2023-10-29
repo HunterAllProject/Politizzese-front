@@ -29,7 +29,7 @@ export const Home = ({ }) => {
       </div>
 
       <div className="tituloGlobal">
-        <h1>Pedidos</h1>
+        <h1>PEDIDOS</h1>
         <div className="barraGlobal"> </div>
       </div>
 

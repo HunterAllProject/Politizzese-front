@@ -13,7 +13,7 @@ export const NovosServicos = () => {
       <Navbar />
 
       <div className="tituloGlobal">
-        <h1>Serviços</h1>
+        <h1>SERVIÇOS</h1>
         <div className="barraGlobal"> </div>
       </div>
 
@@ -45,8 +45,8 @@ export const NovosServicos = () => {
                 </div>
 
                 <div className="cardSolicitar">
-                  <Link to="/cadastrarServico">
-                    <p>SOLICITAR ESTE SERVIÇO</p>
+                  <Link to="/cadastrarservico">
+                    <button>SOLICITAR ESTE SERVIÇO</button>
                   </Link>
                 </div>
               </div>
@@ -69,8 +69,8 @@ export const NovosServicos = () => {
                 </div>
 
                 <div className="cardSolicitar">
-                  <Link to="/cadastrarServico">
-                    <p>SOLICITAR ESTE SERVIÇO</p>
+                  <Link to="/cadastrarservico">
+                    <button>SOLICITAR ESTE SERVIÇO</button>
                   </Link>
                 </div>
               </div>
@@ -93,8 +93,8 @@ export const NovosServicos = () => {
                 </div>
 
                 <div className="cardSolicitar">
-                  <Link to="/cadastrarServico">
-                    <p>SOLICITAR ESTE SERVIÇO</p>
+                  <Link to="/cadastrarservico">
+                    <button>SOLICITAR ESTE SERVIÇO</button>
                   </Link>
                 </div>
               </div>

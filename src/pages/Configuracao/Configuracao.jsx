@@ -14,7 +14,7 @@ export const Configuracao = () => {
       <Navbar />
 
       <div className="tituloGlobal1">
-        <h1>Configuração & Privacidade</h1>
+        <h1>CONFIGURAÇÃO & PRIVACIDADE</h1>
         <div className="barraGlobal1"></div>
       </div>
 

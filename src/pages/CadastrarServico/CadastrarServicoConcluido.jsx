@@ -11,7 +11,7 @@ export const CadastrarServicoConcluido = () => {
     <div className="containerCadastrarServicoConcluidoBudy">
       <Navbar />
       <div className="tituloGlobal">
-        <h1>Cadastrar Serviços</h1>
+        <h1>CADASTRAR SERVIÇOS</h1>
         <div className="barraGlobal"></div>
       </div>
 
@@ -29,10 +29,11 @@ export const CadastrarServicoConcluido = () => {
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 1, width: "40ch", color: "black" },
+                "& .MuiTextField-root": { m: 1, color: "black" },
               }}
               noValidate
               autoComplete="off"
+              className="inputFormCadastrarServico"
             >
               <div>
                 <TextField
@@ -53,10 +54,11 @@ export const CadastrarServicoConcluido = () => {
             <Box
               component="form"
               sx={{
-                "& .MuiTextField-root": { m: 1, width: "40ch", color: "black" },
+                "& .MuiTextField-root": { m: 1, color: "black" },
               }}
               noValidate
               autoComplete="off"
+              className="inputFormCadastrarServico"
             >
               <div>
                 <TextField
@@ -70,7 +72,7 @@ export const CadastrarServicoConcluido = () => {
           </div>
 
           <div className="botaoCadastrarServicob">
-            <Link to="/listarcartao">
+            <Link to="/">
               <button type="submit">PEDIDO CONCLUÍDO</button>
             </Link>
           </div>

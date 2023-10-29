@@ -10,7 +10,7 @@ export const Assinaturas = () => {
     <div className="containerBudyAssinatura">
       <Navbar />
       <div className="tituloGlobal">
-        <h1>Assinaturas</h1>
+        <h1>ASSINATURA</h1>
         <div className="barraGlobal"> </div>
       </div>
       <div className="assinaturasContainer">

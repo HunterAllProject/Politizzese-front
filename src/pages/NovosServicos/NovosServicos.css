@@ -25,6 +25,7 @@
     justify-content: center;
     align-items: center;
     flex: 1 1 0;
+    margin-bottom: 80px;
 }
 
 .textoCard {
@@ -46,7 +47,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 120px;
+    gap: 70px;
     height: 300px;
 }
 
@@ -61,7 +62,7 @@
     background-color: #0098B2;
     border-radius: 10px;
     cursor: pointer;
-    box-shadow: 1px 1px 2px rgb(146, 137, 137);
+    box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.25);
 }
 
 .cardImg img {
@@ -72,21 +73,24 @@
 .cardDescricao h2 {
     font-size: 20px;
     margin-bottom: 10px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .cardCreditos {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: #9850EB;
     padding: 1px;
     max-width: 100px;
     margin-bottom: 10px;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .cardCreditos p {
-    font-size: 15px;
+    font-size: 12px;
     color: #fff;
 }
 
@@ -95,20 +99,23 @@
     margin-bottom: 10px;
 }
 
-.cardSolicitar p {
-    font-size: 15px;
+.cardSolicitar button {
+    font-size: 13px;
     color: #fff;
 }
 
-.cardSolicitar {
+.cardSolicitar button {
     display: flex;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    padding: 1px;
+    border-radius: 3px;
+    padding: 2px;
     background-color: #9850EB;
     width: 190px;
-    box-shadow: 1px 1px 1px px rgb(146, 137, 137);
+    box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
 }
 
 @media(max-width: 1500px){

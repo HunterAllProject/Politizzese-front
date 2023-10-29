@@ -13,6 +13,7 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Navbar } from "../../components/Navbar/Navbar.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
+import { Progresso } from "../../components/Progresso/Progresso.js
 import { useContext } from "react";
 import { AuthContext } from "../../context/auth/AuthContext";
 
@@ -30,12 +31,18 @@ export const AddCartao = () => {
     idUsuario: "",
     focus: "",
   });
+  const [showLoading, setShowLoading] = useState(false);
+
+    const login = () => {
+      setShowLoading(true);
+    }
 
   const handleSubimit = (event) => {
     event.preventDefault();
     auth.cadastrarCartao(state);
     
     navigate("/listarcartao");
+    setShowLoading(false);
   };
 
   const handleInputChange = (evt) => {
@@ -53,7 +60,7 @@ export const AddCartao = () => {
       <Navbar />
 
       <div className="tituloGlobal">
-        <h1>Adicionar Cartão</h1>
+        <h1>ADICIONAR CARTÃO</h1>
         <div className="barraGlobal"> </div>
       </div>
 
@@ -138,7 +145,6 @@ export const AddCartao = () => {
                     />
                   </Grid>
                 </Grid>
-
                 <div className="botaoAddCartao">
                   <Link to="/listarcartao">
                     <p>Cancelar</p>
@@ -146,6 +152,7 @@ export const AddCartao = () => {
 
                   <Grid item xs={10}>
                     <Button
+                      onClick={login}
                       type="submit"
                       fullWidth
                       variant="contained"
@@ -159,6 +166,7 @@ export const AddCartao = () => {
             </Box>
           </Container>
         </ThemeProvider>
+        { showLoading && <Progresso /> } 
       </div>
       <Footer />
     </div>
