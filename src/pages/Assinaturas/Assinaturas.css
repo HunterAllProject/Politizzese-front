@@ -147,7 +147,7 @@
 .container_conteudo_ass1 .sessoes_ass1 .section3 {
  display: flex;
  flex-direction: column;
- margin-left: 60px;
+ margin-left: 40px;
 }
 
 .container_conteudo_ass1 .sessoes_ass1 .section3 h1 {
@@ -316,12 +316,12 @@
  }
 
  .container_ass .container_titulo_ass h1 {
-  width: 404px;
+  width: 355px;
   font-size: 15px;
  }
 
  .container_conteudo_ass1 {
-  width: 404px;
+  width: 355px;
  }
 
  .container_conteudo_ass1 h3 {
@@ -361,7 +361,7 @@
  .sessoes_ass2 {
   display: flex;
   flex-direction: column;
-  width: 404px;
+  width: 355px;
   padding-bottom: 30px;
  }
 
