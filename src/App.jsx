@@ -14,6 +14,7 @@ import { CadastrarServico } from "./pages/CadastrarServico/CadastrarServico.jsx"
 import { CadastrarServicoConcluido } from "./pages/CadastrarServico/CadastrarServicoConcluido.jsx";
 import { Configuracao } from "./pages/Configuracao/Configuracao.jsx";
 import { TermosUso } from "./pages/TermosUso/TermosUso.jsx";
+import { Suporte } from "./pages/Suporte/Suporte.jsx"
 
 export const App = () => {
     return (
@@ -25,7 +26,7 @@ export const App = () => {
                     <Route path="/recsenha" element={<RecSenha />} />
                     <Route path="/" element={<RequireAuth><Home /></RequireAuth>} />
                     <Route path="/addcartao" element={<RequireAuth> <AddCartao /></RequireAuth>} />
-                    <Route path="/listarcartao" element={<RequireAuth> <ListarCartao /></RequireAuth>} />
+                    <Route path="/listarcartao" element={<ListarCartao />} />
                     <Route path="/novosservicos" element={<RequireAuth><NovosServicos /></RequireAuth>} />
                     <Route path="/assinaturas" element={<RequireAuth><Assinaturas /></RequireAuth>} />
                     <Route path="/extrato" element={<RequireAuth><Extrato /></RequireAuth>} />
@@ -33,7 +34,8 @@ export const App = () => {
                     <Route path="/cadastrarservico" element={<RequireAuth><CadastrarServico /></RequireAuth>} />
                     <Route path="/cadastrarservicoconcluido" element={<RequireAuth><CadastrarServicoConcluido /></RequireAuth>} />
                     <Route path="/config" element={<RequireAuth><Configuracao /></RequireAuth>} />
-                    <Route path="termouso" element={<TermosUso />} />
+                    <Route path="termouso" element={<RequireAuth><TermosUso /></RequireAuth>} />
+                    <Route path="suporte" element={<Suporte />} />
                 </Routes>
             </Router>
         </>
