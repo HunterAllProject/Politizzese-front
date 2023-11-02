@@ -13,7 +13,6 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Navbar } from "../../components/Navbar/Navbar.jsx";
 import { Footer } from "../../components/Footer/Footer.jsx";
-import { Progresso } from "../../components/Progresso/Progresso.js
 import { useContext } from "react";
 import { AuthContext } from "../../context/auth/AuthContext";
 
@@ -31,11 +30,7 @@ export const AddCartao = () => {
     idUsuario: "",
     focus: "",
   });
-  const [showLoading, setShowLoading] = useState(false);
 
-    const login = () => {
-      setShowLoading(true);
-    }
 
   const handleSubimit = (event) => {
     event.preventDefault();
@@ -166,7 +161,6 @@ export const AddCartao = () => {
             </Box>
           </Container>
         </ThemeProvider>
-        { showLoading && <Progresso /> } 
       </div>
       <Footer />
     </div>

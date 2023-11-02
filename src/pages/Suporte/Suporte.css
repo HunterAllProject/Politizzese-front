@@ -1,0 +1,108 @@
+.tituloGlobal h1 {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #000000b1;
+  padding: 10px;
+}
+
+.barraGlobal {
+  background-color: #000000b1;
+  height: 2px;
+  max-width: 98%;
+  margin-left: 9px;
+  margin-bottom: 40px;
+}
+
+.containerSuporteBudy {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.containerSuporteMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 100px;
+  flex: 1 1 0;
+}
+
+.suporteLTDA h1 {
+  color: black;
+  font-size: 20px;
+  font-family: Nunito;
+  margin-bottom: 5px;
+}
+
+.suporteCNPJ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.suporteCNPJ p {
+  color: black;
+  font-size: 15px;
+  font-family: Nunito;
+  margin-bottom: 20px;
+}
+
+.suporteImputButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.suporteButton {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 40px;
+  font-family: Nunito;
+}
+
+.suporteButton button {
+  padding: 5px;
+  font-family: Nunito;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #5a2f8b;
+  width: 200px;
+}
+
+.suporteButton button:hover {
+  background-color: #9850eb;
+}
+
+.suporteButton button:active {
+  background-color: #13b731;
+}
+
+
+@media (max-width: 500px) {
+    .suporteLTDA h1 {
+      font-size: 15px;
+      margin-bottom: 2px;
+    }
+  
+    .suporteCNPJ p {
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+  
+    .suporteImputButton form {
+      width: 25px;
+    }
+
+    .suporteImputButton input {
+        max-width: 100px;
+    }
+  }

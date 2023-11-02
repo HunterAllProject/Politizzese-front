@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Credito.css";
 import { Navbar } from "../../components/Navbar/Navbar";
 import { Footer } from "../../components/Footer/Footer";
 import cifraoIMG from "../../assets/cifrao.svg";
@@ -8,6 +7,7 @@ import { useFetch } from "../../hooks/useFetch";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../context/auth/AuthContext";
+import "./Credito.css";
 
 export const Credito = () => {
     const { data } = useFetch<Creditos[]>('Credito');
@@ -22,9 +22,9 @@ export const Credito = () => {
     return (
         <div>
             <Navbar />
-            <div className="tituloHome">
+            <div className="tituloGlobal">
                 <h1>Créditos</h1>
-                <div className="barraHome"> </div>
+                <div className="barraGlobal"> </div>
             </div>
 
             <div className="creditoContainer">
